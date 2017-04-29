@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>UVic Ocean Physics - Modelling</title><link href="http://web.uvic.ca/~jklymak/" rel="alternate"></link><link href="http://web.uvic.ca/~jklymak/feeds/modelling.atom.xml" rel="self"></link><id>http://web.uvic.ca/~jklymak/</id><updated>2012-01-06T00:00:00-08:00</updated><entry><title>Mixing at Supercritical Topography, review paper in Oceanography</title><link href="http://web.uvic.ca/~jklymak/2012-01-06-mixingsuper.html" rel="alternate"></link><published>2012-01-06T00:00:00-08:00</published><updated>2012-01-06T00:00:00-08:00</updated><author><name>Jody M. Klymak</name></author><id>tag:web.uvic.ca,2012-01-06:/~jklymak/2012-01-06-mixingsuper.html</id><summary type="html">&lt;p&gt;I have a proposed parameterization for turbulence caused by breaking
+tidal waves over sharp topography that is relatively easy to implement
+in numerical&amp;nbsp;models.  &lt;/p&gt;
+&lt;p&gt;![Turbulent breaking of internal tides near&amp;nbsp;topography][Breaking]&lt;/p&gt;
+&lt;div class="citation"&gt;
+Klymak, J.M., M. Buijsman, &lt;span class="caps"&gt;S.M.&lt;/span&gt; Legg, and R. Pinkel, 2012: The direct
+  breaking of internal waves …&lt;/div&gt;</summary><content type="html">&lt;p&gt;I have a proposed parameterization for turbulence caused by breaking
+tidal waves over sharp topography that is relatively easy to implement
+in numerical&amp;nbsp;models.  &lt;/p&gt;
+&lt;p&gt;![Turbulent breaking of internal tides near&amp;nbsp;topography][Breaking]&lt;/p&gt;
+&lt;div class="citation"&gt;
+Klymak, J.M., M. Buijsman, &lt;span class="caps"&gt;S.M.&lt;/span&gt; Legg, and R. Pinkel, 2012: The direct
+  breaking of internal waves at steep topography. &lt;em&gt;Oceanography&lt;/em&gt;,
+  25(2):150-159, doi:http://dx.doi.org/10.5670/oceanog.2012.50.
+[&lt;a href="{{ site.baseurl }}/PubsPub_bib.html#klymaketal12b#klymaketal12b"&gt;bib&lt;/a&gt; | 
+&lt;a href="http://dx.doi.org/10.5670/oceanog.2012.50"&gt;&lt;span class="caps"&gt;DOI&lt;/span&gt;&lt;/a&gt; | 
+&lt;a href="http://web.uvic.ca/~jklymak/IWISE/KlymakEtAl12a.pdf"&gt;pdf&lt;/a&gt;]
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;[Breaking]: {{ site.baseurl&amp;nbsp;}}/images/PrettyHighResSm.jpg&lt;/p&gt;</content></entry></feed>

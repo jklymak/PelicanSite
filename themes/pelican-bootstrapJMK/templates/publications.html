@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Publications{% endblock %}
+{% block content %}
+
+<script type="text/javascript">
+    function disp(s) {
+        var win;
+        var doc;
+        win = window.open("", "WINDOWID");
+        doc = win.document;
+        doc.open("text/html");
+        doc.write("<pre>" + s + "</pre>");
+        doc.close();
+    }
+</script>
+<section id="content" class="body">
+    <h1 class="entry-title">Publications</h1>
+    {% for typegroup in publications|groupby(7)|reverse%}
+    <h2> {{ typegroup.grouper }} </h2>
+    {% for yeargroup in typegroup.list|groupby(1)|reverse%}
+
+    <h3> {{ yeargroup.grouper }} </h3>
+    {% for key, year, text, bibtex, pdf, slides, poster, jmkpubtype in yeargroup.list %}
+    <p>
+    {{ text }}
+    [&nbsp;<a href="javascript:disp('{{ bibtex|replace('\n', '\\n')|escape|forceescape }}');">Bibtex</a>&nbsp;]
+    {% for label, target in [('PDF', pdf), ('Slides', slides), ('Poster', poster)] %}
+    {{ "[&nbsp;<a href=\"%s\">%s</a>&nbsp;]" % (target, label) if target }}
+    {% endfor %}
+    </p>
+    {% endfor %}
+    {% endfor %}
+    {% endfor %}
+
+
+</section>
+{% endblock %}

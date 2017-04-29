@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Current&nbsp;Students - UVic Ocean Physics</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+<style type="text/css">
+
+/*some stuff for output/input prompts*/
+div.cell{border:1px solid transparent;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;display:flex;flex-direction:column;align-items:stretch}div.cell.selected{border-radius:4px;border:thin #ababab solid}
+div.cell.edit_mode{border-radius:4px;border:thin #008000 solid}
+div.cell{width:100%;padding:5px 5px 5px 0;margin:0;outline:none}
+div.prompt{min-width:11ex;padding:.4em;margin:0;font-family:monospace;text-align:right;line-height:1.21429em}
+@media (max-width:480px){div.prompt{text-align:left}}div.inner_cell{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;display:flex;flex-direction:column;align-items:stretch;-webkit-box-flex:1;-moz-box-flex:1;box-flex:1;flex:1}
+div.input_area{border:1px solid #cfcfcf;border-radius:4px;background:#f7f7f7;line-height:1.21429em}
+div.prompt:empty{padding-top:0;padding-bottom:0}
+div.input{page-break-inside:avoid;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:horizontal;-moz-box-align:stretch;display:box;box-orient:horizontal;box-align:stretch;}
+div.inner_cell{width:90%;}
+div.input_area{border:1px solid #cfcfcf;border-radius:4px;background:#f7f7f7;}
+div.input_prompt{color:navy;border-top:1px solid transparent;}
+div.output_wrapper{margin-top:5px;position:relative;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;width:100%;}
+div.output_scroll{height:24em;width:100%;overflow:auto;border-radius:4px;-webkit-box-shadow:inset 0 2px 8px rgba(0, 0, 0, 0.8);-moz-box-shadow:inset 0 2px 8px rgba(0, 0, 0, 0.8);box-shadow:inset 0 2px 8px rgba(0, 0, 0, 0.8);}
+div.output_collapsed{margin:0px;padding:0px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;width:100%;}
+div.out_prompt_overlay{height:100%;padding:0px 0.4em;position:absolute;border-radius:4px;}
+div.out_prompt_overlay:hover{-webkit-box-shadow:inset 0 0 1px #000000;-moz-box-shadow:inset 0 0 1px #000000;box-shadow:inset 0 0 1px #000000;background:rgba(240, 240, 240, 0.5);}
+div.output_prompt{color:darkred;}
+
+a.anchor-link:link{text-decoration:none;padding:0px 20px;visibility:hidden;}
+h1:hover .anchor-link,h2:hover .anchor-link,h3:hover .anchor-link,h4:hover .anchor-link,h5:hover .anchor-link,h6:hover .anchor-link{visibility:visible;}
+/* end stuff for output/input prompts*/
+
+
+.highlight-ipynb .hll { background-color: #ffffcc }
+.highlight-ipynb  { background: #f8f8f8; }
+.highlight-ipynb .c { color: #408080; font-style: italic } /* Comment */
+.highlight-ipynb .err { border: 1px solid #FF0000 } /* Error */
+.highlight-ipynb .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight-ipynb .o { color: #666666 } /* Operator */
+.highlight-ipynb .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight-ipynb .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight-ipynb .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight-ipynb .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight-ipynb .gd { color: #A00000 } /* Generic.Deleted */
+.highlight-ipynb .ge { font-style: italic } /* Generic.Emph */
+.highlight-ipynb .gr { color: #FF0000 } /* Generic.Error */
+.highlight-ipynb .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight-ipynb .gi { color: #00A000 } /* Generic.Inserted */
+.highlight-ipynb .go { color: #888888 } /* Generic.Output */
+.highlight-ipynb .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight-ipynb .gs { font-weight: bold } /* Generic.Strong */
+.highlight-ipynb .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight-ipynb .gt { color: #0044DD } /* Generic.Traceback */
+.highlight-ipynb .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight-ipynb .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight-ipynb .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight-ipynb .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight-ipynb .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight-ipynb .kt { color: #B00040 } /* Keyword.Type */
+.highlight-ipynb .m { color: #666666 } /* Literal.Number */
+.highlight-ipynb .s { color: #BA2121 } /* Literal.String */
+.highlight-ipynb .na { color: #7D9029 } /* Name.Attribute */
+.highlight-ipynb .nb { color: #008000 } /* Name.Builtin */
+.highlight-ipynb .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight-ipynb .no { color: #880000 } /* Name.Constant */
+.highlight-ipynb .nd { color: #AA22FF } /* Name.Decorator */
+.highlight-ipynb .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight-ipynb .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight-ipynb .nf { color: #0000FF } /* Name.Function */
+.highlight-ipynb .nl { color: #A0A000 } /* Name.Label */
+.highlight-ipynb .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight-ipynb .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight-ipynb .nv { color: #19177C } /* Name.Variable */
+.highlight-ipynb .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight-ipynb .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight-ipynb .mf { color: #666666 } /* Literal.Number.Float */
+.highlight-ipynb .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight-ipynb .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight-ipynb .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight-ipynb .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight-ipynb .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight-ipynb .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight-ipynb .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight-ipynb .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight-ipynb .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight-ipynb .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight-ipynb .sx { color: #008000 } /* Literal.String.Other */
+.highlight-ipynb .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight-ipynb .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight-ipynb .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight-ipynb .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight-ipynb .vc { color: #19177C } /* Name.Variable.Class */
+.highlight-ipynb .vg { color: #19177C } /* Name.Variable.Global */
+.highlight-ipynb .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight-ipynb .il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
+
+<style type="text/css">
+/* Overrides of notebook CSS for static HTML export */
+div.entry-content {
+  overflow: visible;
+  padding: 8px;
+}
+.input_area {
+  padding: 0.2em;
+}
+
+a.heading-anchor {
+ white-space: normal;
+}
+
+.rendered_html
+code {
+ font-size: .8em;
+}
+
+pre.ipynb {
+  color: black;
+  background: #f7f7f7;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0px;
+  font-size: 13px;
+}
+
+/* remove the prompt div from text cells */
+div.text_cell .prompt {
+    display: none;
+}
+
+/* remove horizontal padding from text cells, */
+/* so it aligns with outer body text */
+div.text_cell_render {
+    padding: 0.5em 0em;
+}
+
+img.anim_icon{padding:0; border:0; vertical-align:middle; -webkit-box-shadow:none; -box-shadow:none}
+
+div.collapseheader {
+    width=100%;
+    padding: 2px;
+    cursor: pointer;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+</style>
+
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<link rel="canonical" href="http://web.uvic.ca/~jklymak/pages/currentstudents.html">
+
+        <meta name="author" content="Jody M. Klymak" />
+        <meta name="description" content="Links: http://greatresearch.org In particular, I recommend: Managing You Advisor The paper review process You and Your Research Proposal Expectations A PhD indicates that a scientist is able to carry out independent research, is an expert in their immediate research topic, and has enough knowledge and background to teach …" />
+
+    <meta property="og:site_name" content="UVic Ocean Physics" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Current Students"/>
+    <meta property="og:url" content="http://web.uvic.ca/~jklymak/pages/currentstudents.html"/>
+    <meta property="og:description" content="Links: http://greatresearch.org In particular, I recommend: Managing You Advisor The paper review process You and Your Research Proposal Expectations A PhD indicates that a scientist is able to carry out independent research, is an expert in their immediate research topic, and has enough knowledge and background to teach …" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://web.uvic.ca/~jklymak/theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="http://web.uvic.ca/~jklymak/theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://web.uvic.ca/~jklymak/theme/css/academicons.min.css" rel="stylesheet">
+
+    <link href="http://web.uvic.ca/~jklymak/theme/css/pygments/native.css" rel="stylesheet">
+        <link href="http://web.uvic.ca/~jklymak/theme/css/typogrify.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://web.uvic.ca/~jklymak/theme/css/style.css" type="text/css"/>
+
+        <link href="http://web.uvic.ca/~jklymak/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="UVic Ocean Physics ATOM Feed"/>
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://web.uvic.ca/~jklymak/" class="navbar-brand">
+<img class="img-responsive pull-left gap-right" src="http://web.uvic.ca/~jklymak/images/OPGUvicLogo90.jpg" width=""/> UVic Ocean Physics            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="http://web.uvic.ca/~jklymak/pages/mycalendar.html">
+                             My&nbsp;Calendar
+                          </a></li>
+                         <li><a href="http://web.uvic.ca/~jklymak/pages/paperdata.html">
+                             Paper&nbsp;Data
+                          </a></li>
+                         <li><a href="http://web.uvic.ca/~jklymak/pages/people.html">
+                             People
+                          </a></li>
+                         <li><a href="http://web.uvic.ca/~jklymak/pages/publications.html">
+                             Publications
+                          </a></li>
+                         <li><a href="http://web.uvic.ca/~jklymak/pages/teaching.html">
+                             Teaching
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content" class="body">
+        <h1 class="entry-title">Current&nbsp;Students</h1>
+        
+        <div class="entry-content">
+            <h2>Links:</h2>
+<ul>
+<li><a href="">http://greatresearch.org</a>  In particular, I recommend: <ul>
+<li><a href="http://greatresearch.org/2013/08/14/managing-your-advisor/">Managing You&nbsp;Advisor</a></li>
+<li><a href="http://greatresearch.org/2013/10/18/the-paper-reviewing-process/">The paper review&nbsp;process</a></li>
+<li><a href="http://greatresearch.org/2013/09/06/you-and-your-research-proposal/">You and Your Research&nbsp;Proposal</a></li>
+</ul>
+</li>
+</ul>
+<h2>Expectations</h2>
+<p>A PhD indicates that a scientist is able to carry out independent research, is an expert in their immediate research topic, and has enough knowledge and background to teach undergraduate students in their field. In the case of my students this would be in physics/oceanography.  I&#8217;ll elaborate on each of these in inverse&nbsp;order.</p>
+<h3>Background knowledge and&nbsp;ability</h3>
+<p>A PhD indicates that a scientist understands their field at an expert level such that they would be able to (with some preparation) teach an undergraduate course in their field.  This implies that they have some general knowledge and are familiar with the methods for approaching and solving&nbsp;problems.  </p>
+<p>This is ability is generally absorbed through course work, and general exposure to the student&#8217;s field.  It is difficult to test, since of course we all forget explicit details of various problems.  If necessary this can be tested by asking the student to prepare a lecture on a short time&nbsp;frame. </p>
+<h3>Being an &#8220;expert&#8221; in your immediate&nbsp;field</h3>
+<p>This usually means reading, and more reading of the literature.  In my field, if a PhD student has not read a couple hundred papers, and understood most of them, it is unlikely that they will have acquired the expertise to earn a PhD.  A good PhD thesis will have over 100 references, properly referred&nbsp;to.  </p>
+<p>At the end of the PhD the student should know more than the advisor about their particular subject area.  The advisor does not have time to understand all the details of every student&#8217;s thesis, and by the end of the thesis the student should be teaching the&nbsp;advisor.  </p>
+<h3>Being an independent&nbsp;researcher</h3>
+<p>This is the hardest for students, and differentiates technicians from researchers.  Students must be able to identify and advocate for important problems, devise &#8220;experiments&#8221; to test the problems,  execute the &#8220;experiments&#8221;, and then communicate the results.  This process happens on different levels in a good thesis.  The overall problem should be convincingly advocated for and progress made on understanding it.  The overall problem is often broken up into smaller sub problems (call them the chapters of the thesis if you like) and within those subproblems, there are a number of smaller steps that all require this&nbsp;process. </p>
+<p>I put &#8220;experiments&#8221; in quotes because I mean the process of testing something.  The whole thesis can be thought of as an experiment, but each individual analysis can as well.  i.e. I hypothesize that the variability in the internal wave field has a seasonality due to the winds, so I devise an &#8220;experiment&#8221; to test that by calculating the variance of u&#8217; in two-day windows.  If there is a signal there, I refine the &#8220;experiment&#8221; by seeing if there is a correlation to the wind strength, or wind variance, etc etc.  So, even if I didn&#8217;t collect this data, each foray into the data is an &#8220;experiment&#8221; that has a hypothesis that is related to my overall&nbsp;problem.  </p>
+<p>In order to earn a PhD, the student needs to be generating a substantial portion of these &#8220;problems&#8221; and &#8220;experiments&#8221; themselves.  The overall thrust of the thesis should be largely guided by the student, and they should garner the supporting material to argue that solving the problem will be a significant scientific advance.  Again, this goes all the way down to individual steps within each chapter.  If an analysis is performed on the data, the merit of the analysis should be justified in the context of the larger problem, and its role in advancing the argument made clear.  Again, a PhD student should be generating the bulk of these analyses and&nbsp;justifications.  </p>
+<p>Now, of course, it would be a very poor piece of science if this all happened in isolation, even for expert scientists, let alone students learning the process for the first time.  The role of the advisory committee, and other scientists the student shows the material to, should be to give feedback on the merits of the effort, and to point out where the effort has flaws. This allows the student to go back and refine their arguments and improve their analyses.  This feedback can take many iterations; a very respected colleague counted over 80 drafts of his thesis before his advisor accepted it. This process should be respected, and engaged in&nbsp;eagerly.  </p>
+<p>During this process the advisors should be providing the student with ideas, but it should not be the advisor supplying the student with &#8220;next steps&#8221;.  Students have to be&nbsp;independent.</p>
+<h4>Communication</h4>
+<p>The process of getting this feedback will be greatly helped by good communication skills.  Students need to learn how to write and give good presentations.  A common pitfall here is that students provide a literature review with little context, and then explain their plots with little context, and then wrap up with a summary of their plots.  This is poor communication.  Introductions should be essays explaining the point of the paper, and why it is an advance.  Presenting the result of &#8220;experiments&#8221; should be in the context of answering the questions posed. The conclusions and discussion should indicate how they question has been moved forward by the work, major caveats of the work, and what remains unanswered.  This very brief outline applies to chapters of the thesis, quite often to subsections within the chapters, and it definitely applies to oral&nbsp;communications.  </p>
+<p>Being able to articulate the point of your research and why it is important is a strong indicator of being able to carry out independent scientific research.  Going through the process of arguing the merits of your research always helps improve the story, and more often than not, leads to ideas for new analyses that again improve the final product.  If the effort to add the context is not engaged in, the result will be amorphous and of questionable&nbsp;value. </p>
+<h3>Advisor Student&nbsp;Relationship</h3>
+<p>As I indicated above, the student&#8217;s advisors should be sounding boards for the student&#8217;s ideas, and helpful critics of their efforts.  Criticism is necessary to improve the student&#8217;s work, and should not be viewed as a personal affront or a final judgement by the advisors on the student&#8217;s&nbsp;ability.  </p>
+<p>That said, final judgements do have to be made.  The General  Exam and the Final Exam are two points where these judgements are made, though in my opinion students who are not going to pass these should not be encouraged to take&nbsp;them.  </p>
+<h2>PhD Thesis&nbsp;Proposal</h2>
+<p>Departmental suggestion about the content of the PhD thesis proposal is suprisingly&nbsp;lacking:</p>
+<ul>
+<li><span class="caps">SEOS</span> <a href="http://www.uvic.ca/science/seos/grad/current/steps/index.php">suggests</a>:</li>
+</ul>
+<blockquote>
+<p>This should: (i) provide the scientific background and rationale for the proposed thesis research; and (ii) propose the methodology for undertaking the research that will constitute the thesis. This may include brief discussion of preliminary results if&nbsp;appropriate.</p>
+</blockquote>
+<ul>
+<li>Physics <a href="http://www.uvic.ca/science/physics/current/doctorate/candidacy/index.php">suggests</a>&#8230; 20-40 pages, and nothing&nbsp;else.</li>
+</ul>
+<p>This lack of specificity leaves it up to graduate committees to decide what should be in the thesis proposal.  Unfortunately, this does not lead often lead to a specific set of guidelines either.  Here is what I suggest and&nbsp;why.</p>
+<h3>Proposal&nbsp;Content</h3>
+<p>The proposal should be like most proposals and convince the reader that the student has an interesting research topic that will lead to significant progress in their field. Making this case is more involved than most students&nbsp;expect.</p>
+<ol>
+<li>What: You must clearly state the research problem.  This might take a couple of&nbsp;paragraphs.</li>
+<li>Why: You discuss, pretty extensively, why the problem is important. This should be both to your field, science in general, and ideally to society as a whole. This section should be 2-3&nbsp;pages.</li>
+<li>You discuss whats already been done on this problem.  This should be written not as a straight literature review, but as an argumentative essay that will point out what approaches have been tried and their pluses and minuses.  After all if this subject was fully figured out, you shouldn&#8217;t have it as a thesis topic.  This sections is another 3-4&nbsp;pages.</li>
+<li>You argue that you are going to add something to this problem and explain what you are going to do.  This section is 4-5&nbsp;pages.</li>
+<li>At the very end, you have a page on work completed (your comittee has already see this, right?), and second for your&nbsp;timeline. </li>
+</ol>
+<p>With figures and references you now have something that is about 15-25&nbsp;pages. </p>
+<p>All these sections should be heavily referenced and convince the reader that you are an expert in the field. But more importantly, each section should have arguments to&nbsp;make.</p>
+<p>The most important thing to note is that the proposal is <em>not</em> an information dump.  You will convince us of your knowledge in the context of the above arguments, not by just by writing an extedend wikipedia&nbsp;article.</p>
+<h3>Why should it be this&nbsp;format?</h3>
+<p>The problem I&#8217;ve seen with a number of PhD proposals is that they try to impress me with a level of knowledge rather than a level of thinking. Writing the proposal as above will ensure you have <em>thought</em> about the point of your research.  If you know the point, then you will be a much more efficient researcher.  You will also find it a lot easier to write your papers and&nbsp;thesis.</p>
+        </div>
+    </section>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://scholar.google.ca/citations?user=jiXa6MsAAAAJ&hl=en"><i class="ai ai-google-scholar ai-lg"></i> Google Scholar</a></li>
+    <li class="list-group-item"><a href="http://orcid.org/0000-0003-4612-8600"><i class="ai ai-orcid ai-lg"></i> OrcID</a></li>
+    <li class="list-group-item"><a href="http://github.com/jklymak"><i class="fa fa-github-square fa-lg"></i> Github</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Recent Posts -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+  <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="http://web.uvic.ca/~jklymak/hughespaperjgr.html">Ken Hughes publishes paper on Arctic&nbsp;Mixing</a></li>
+    <li class="list-group-item"><a href="http://web.uvic.ca/~jklymak/reflectionpaper.html">Internal Tide Reflection Paper published <span class="caps">JPO</span></a></li>
+    <li class="list-group-item"><a href="http://web.uvic.ca/~jklymak/manmangrad.html">Manman Wang&nbsp;Graduates</a></li>
+    <li class="list-group-item"><a href="http://web.uvic.ca/~jklymak/newgradstudent.html">Welcome Lina&nbsp;Rotermund</a></li>
+    <li class="list-group-item"><a href="http://web.uvic.ca/~jklymak/2014-09-01-wangandhughes.html">Two new graduate&nbsp;students!</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Recent Posts -->
+
+<!-- Sidebar/Links -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+  <ul class="list-group" id="links">
+    <li class="list-group-item">
+      <a href="http://uvic.ca/" target="_blank">U. of Victoria</a>
+    </li>
+    <li class="list-group-item">
+      <a href="http://seos.uvic.ca/" target="_blank">School of Earth and Ocean Sciences</a>
+    </li>
+    <li class="list-group-item">
+      <a href="http://phys.uvic.ca/" target="_blank">Department of Physics & Astronomy</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Links -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2017 Jody M. Klymak
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="http://web.uvic.ca/~jklymak/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://web.uvic.ca/~jklymak/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://web.uvic.ca/~jklymak/theme/js/respond.min.js"></script>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $("div.collapseheader").click(function () {
+    $header = $(this).children("span").first();
+    $codearea = $(this).children(".input_area");
+    console.log($(this).children());
+    $codearea.slideToggle(500, function () {
+        $header.text(function () {
+            return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+        });
+    });
+});
+});
+</script>
+
+</body>
+</html>

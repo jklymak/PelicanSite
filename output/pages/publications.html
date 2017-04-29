@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Publications</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+<style type="text/css">
+
+/*some stuff for output/input prompts*/
+div.cell{border:1px solid transparent;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;display:flex;flex-direction:column;align-items:stretch}div.cell.selected{border-radius:4px;border:thin #ababab solid}
+div.cell.edit_mode{border-radius:4px;border:thin #008000 solid}
+div.cell{width:100%;padding:5px 5px 5px 0;margin:0;outline:none}
+div.prompt{min-width:11ex;padding:.4em;margin:0;font-family:monospace;text-align:right;line-height:1.21429em}
+@media (max-width:480px){div.prompt{text-align:left}}div.inner_cell{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;display:flex;flex-direction:column;align-items:stretch;-webkit-box-flex:1;-moz-box-flex:1;box-flex:1;flex:1}
+div.input_area{border:1px solid #cfcfcf;border-radius:4px;background:#f7f7f7;line-height:1.21429em}
+div.prompt:empty{padding-top:0;padding-bottom:0}
+div.input{page-break-inside:avoid;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:horizontal;-moz-box-align:stretch;display:box;box-orient:horizontal;box-align:stretch;}
+div.inner_cell{width:90%;}
+div.input_area{border:1px solid #cfcfcf;border-radius:4px;background:#f7f7f7;}
+div.input_prompt{color:navy;border-top:1px solid transparent;}
+div.output_wrapper{margin-top:5px;position:relative;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;width:100%;}
+div.output_scroll{height:24em;width:100%;overflow:auto;border-radius:4px;-webkit-box-shadow:inset 0 2px 8px rgba(0, 0, 0, 0.8);-moz-box-shadow:inset 0 2px 8px rgba(0, 0, 0, 0.8);box-shadow:inset 0 2px 8px rgba(0, 0, 0, 0.8);}
+div.output_collapsed{margin:0px;padding:0px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;width:100%;}
+div.out_prompt_overlay{height:100%;padding:0px 0.4em;position:absolute;border-radius:4px;}
+div.out_prompt_overlay:hover{-webkit-box-shadow:inset 0 0 1px #000000;-moz-box-shadow:inset 0 0 1px #000000;box-shadow:inset 0 0 1px #000000;background:rgba(240, 240, 240, 0.5);}
+div.output_prompt{color:darkred;}
+
+a.anchor-link:link{text-decoration:none;padding:0px 20px;visibility:hidden;}
+h1:hover .anchor-link,h2:hover .anchor-link,h3:hover .anchor-link,h4:hover .anchor-link,h5:hover .anchor-link,h6:hover .anchor-link{visibility:visible;}
+/* end stuff for output/input prompts*/
+
+
+.highlight-ipynb .hll { background-color: #ffffcc }
+.highlight-ipynb  { background: #f8f8f8; }
+.highlight-ipynb .c { color: #408080; font-style: italic } /* Comment */
+.highlight-ipynb .err { border: 1px solid #FF0000 } /* Error */
+.highlight-ipynb .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight-ipynb .o { color: #666666 } /* Operator */
+.highlight-ipynb .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight-ipynb .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight-ipynb .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight-ipynb .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight-ipynb .gd { color: #A00000 } /* Generic.Deleted */
+.highlight-ipynb .ge { font-style: italic } /* Generic.Emph */
+.highlight-ipynb .gr { color: #FF0000 } /* Generic.Error */
+.highlight-ipynb .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight-ipynb .gi { color: #00A000 } /* Generic.Inserted */
+.highlight-ipynb .go { color: #888888 } /* Generic.Output */
+.highlight-ipynb .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight-ipynb .gs { font-weight: bold } /* Generic.Strong */
+.highlight-ipynb .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight-ipynb .gt { color: #0044DD } /* Generic.Traceback */
+.highlight-ipynb .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight-ipynb .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight-ipynb .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight-ipynb .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight-ipynb .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight-ipynb .kt { color: #B00040 } /* Keyword.Type */
+.highlight-ipynb .m { color: #666666 } /* Literal.Number */
+.highlight-ipynb .s { color: #BA2121 } /* Literal.String */
+.highlight-ipynb .na { color: #7D9029 } /* Name.Attribute */
+.highlight-ipynb .nb { color: #008000 } /* Name.Builtin */
+.highlight-ipynb .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight-ipynb .no { color: #880000 } /* Name.Constant */
+.highlight-ipynb .nd { color: #AA22FF } /* Name.Decorator */
+.highlight-ipynb .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight-ipynb .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight-ipynb .nf { color: #0000FF } /* Name.Function */
+.highlight-ipynb .nl { color: #A0A000 } /* Name.Label */
+.highlight-ipynb .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight-ipynb .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight-ipynb .nv { color: #19177C } /* Name.Variable */
+.highlight-ipynb .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight-ipynb .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight-ipynb .mf { color: #666666 } /* Literal.Number.Float */
+.highlight-ipynb .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight-ipynb .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight-ipynb .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight-ipynb .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight-ipynb .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight-ipynb .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight-ipynb .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight-ipynb .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight-ipynb .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight-ipynb .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight-ipynb .sx { color: #008000 } /* Literal.String.Other */
+.highlight-ipynb .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight-ipynb .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight-ipynb .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight-ipynb .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight-ipynb .vc { color: #19177C } /* Name.Variable.Class */
+.highlight-ipynb .vg { color: #19177C } /* Name.Variable.Global */
+.highlight-ipynb .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight-ipynb .il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
+
+<style type="text/css">
+/* Overrides of notebook CSS for static HTML export */
+div.entry-content {
+  overflow: visible;
+  padding: 8px;
+}
+.input_area {
+  padding: 0.2em;
+}
+
+a.heading-anchor {
+ white-space: normal;
+}
+
+.rendered_html
+code {
+ font-size: .8em;
+}
+
+pre.ipynb {
+  color: black;
+  background: #f7f7f7;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0px;
+  font-size: 13px;
+}
+
+/* remove the prompt div from text cells */
+div.text_cell .prompt {
+    display: none;
+}
+
+/* remove horizontal padding from text cells, */
+/* so it aligns with outer body text */
+div.text_cell_render {
+    padding: 0.5em 0em;
+}
+
+img.anim_icon{padding:0; border:0; vertical-align:middle; -webkit-box-shadow:none; -box-shadow:none}
+
+div.collapseheader {
+    width=100%;
+    padding: 2px;
+    cursor: pointer;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+</style>
+
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+
+        <meta name="author" content="Jody M. Klymak" />
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="UVic Ocean Physics" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="UVic Ocean Physics"/>
+        <meta property="og:url" content="http://web.uvic.ca/~jklymak"/>
+        <meta property="og:description" content="UVic Ocean Physics"/>
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://web.uvic.ca/~jklymak/theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="http://web.uvic.ca/~jklymak/theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://web.uvic.ca/~jklymak/theme/css/academicons.min.css" rel="stylesheet">
+
+    <link href="http://web.uvic.ca/~jklymak/theme/css/pygments/native.css" rel="stylesheet">
+        <link href="http://web.uvic.ca/~jklymak/theme/css/typogrify.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://web.uvic.ca/~jklymak/theme/css/style.css" type="text/css"/>
+
+        <link href="http://web.uvic.ca/~jklymak/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="UVic Ocean Physics ATOM Feed"/>
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://web.uvic.ca/~jklymak/" class="navbar-brand">
+<img class="img-responsive pull-left gap-right" src="http://web.uvic.ca/~jklymak/images/OPGUvicLogo90.jpg" width=""/> UVic Ocean Physics            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="http://web.uvic.ca/~jklymak/pages/mycalendar.html">
+                             My&nbsp;Calendar
+                          </a></li>
+                         <li><a href="http://web.uvic.ca/~jklymak/pages/paperdata.html">
+                             Paper&nbsp;Data
+                          </a></li>
+                         <li><a href="http://web.uvic.ca/~jklymak/pages/people.html">
+                             People
+                          </a></li>
+                         <li class="active"><a href="http://web.uvic.ca/~jklymak/pages/publications.html">
+                             Publications
+                          </a></li>
+                         <li><a href="http://web.uvic.ca/~jklymak/pages/teaching.html">
+                             Teaching
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+<script type="text/javascript">
+    function disp(s) {
+        var win;
+        var doc;
+        win = window.open("", "WINDOWID");
+        doc = win.document;
+        doc.open("text/html");
+        doc.write("<pre>" + s + "</pre>");
+        doc.close();
+    }
+</script>
+<section id="content" class="body">
+    <h1 class="entry-title">Publications</h1>
+    <h2> refereed </h2>
+
+    <h3> 2017 </h3>
+    <p>
+    Kenneth&nbsp;G. Hughes, Jody&nbsp;M. Klymak, Xianmin Hu, and Paul&nbsp;G. Myers.
+Water mass modification and mixing rates in a 1/12$\,^<span class="bibtex-protected">\circ </span>$ simulation of the <span class="bibtex-protected">Canadian</span> <span class="bibtex-protected">Arctic</span> <span class="bibtex-protected">Archipelago</span>.
+<em>J. Geophys. Res.</em>, 122(2):803–820, 2017.
+URL: <a href="http://dx.doi.org/10.1002/2016JC012235">http://dx.doi.org/10.1002/2016JC012235</a>, <a href="https://doi.org/10.1002/2016jc012235">doi:10.1002/2016jc012235</a>.
+    [&nbsp;<a href="javascript:disp('@article{hughesetal17,\n    author = &amp;#34;Hughes, Kenneth G. and Klymak, Jody M. and Hu, Xianmin and Myers, Paul G.&amp;#34;,\n    date-added = &amp;#34;2017-04-27 00:04:58 +0000&amp;#34;,\n    date-modified = &amp;#34;2017-04-28 22:46:29 +0000&amp;#34;,\n    doi = &amp;#34;10.1002/2016jc012235&amp;#34;,\n    issn = &amp;#34;2169-9275&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Geophys. Res.&amp;#34;,\n    number = &amp;#34;2&amp;#34;,\n    pages = &amp;#34;803--820&amp;#34;,\n    publisher = &amp;#34;Wiley-Blackwell&amp;#34;,\n    title = &amp;#34;Water mass modification and mixing rates in a 1/12$\,^{\circ}$ simulation of the {Canadian} {Arctic} {Archipelago}&amp;#34;,\n    url = &amp;#34;http://dx.doi.org/10.1002/2016JC012235&amp;#34;,\n    volume = &amp;#34;122&amp;#34;,\n    year = &amp;#34;2017&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8Qbi4uLy4uLy4uLy4uL0xpYnJhcnkvTW9iaWxlIERvY3VtZW50cy8zTDY4S1FCNEhHfmNvbX5yZWFkZGxlfkNvbW1vbkRvY3VtZW50cy9Eb2N1bWVudHMvUERGRmlsZXMvaHVnaGVzZXRhbGEucGRm0hcLGBlXTlMuZGF0YU8RAiIAAAAAAiIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAM6XSVNIKwAAApyNYA9odWdoZXNldGFsYS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwBX51SaD2gAAAAAAAAAAAAQABgAACSAAAAAAAAAAAAAAAAAAAAAIUERGRmlsZXMAEAAIAADOl6vDAAAAEQAIAADVJuZKAAAAAQAcApyNYAIe77cCHu+2AD5wOAALvYMACTI1AAJkjgACAH1NYWNpbnRvc2ggSEQ6VXNlcnM6AGprbHltYWs6AExpYnJhcnk6AE1vYmlsZSBEb2N1bWVudHM6ADNMNjhLUUI0SEd+Y29tfnJlYWRkbGV+IzIxRUVGQjY6AERvY3VtZW50czoAUERGRmlsZXM6AGh1Z2hlc2V0YWxhLnBkZgAADgAgAA8AaAB1AGcAaABlAHMAZQB0AGEAbABhAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBwVXNlcnMvamtseW1hay9MaWJyYXJ5L01vYmlsZSBEb2N1bWVudHMvM0w2OEtRQjRIR35jb21+cmVhZGRsZX5Db21tb25Eb2N1bWVudHMvRG9jdW1lbnRzL1BERkZpbGVzL2h1Z2hlc2V0YWxhLnBkZgATAAEvAAAVAAIADv//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOAP8BBAEMAzIDNAM5A0QDTQNbA18DZgNvA3QDgQOEA5YDmQOeAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA6A=&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1002/2016JC012235&amp;#34;,\n    bdsk-url-2 = &amp;#34;http://dx.doi.org/10.1002/2016jc012235&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+
+    <h3> 2016 </h3>
+    <p>
+    Jody&nbsp;M Klymak, R&nbsp;Kipp Shearman, Jonathan Gula, Craig&nbsp;M Lee, Eric&nbsp;A D'Asaro, Leif&nbsp;N Thomas, Ramsey&nbsp;R Harcourt, Andrey&nbsp;Y Shcherbina, Miles&nbsp;A Sundermeyer, Jeroen Molemaker, and others.
+Submesoscale streamers exchange water on the north wall of the <span class="bibtex-protected">Gulf</span> <span class="bibtex-protected">Stream</span>.
+<em>Geophys. Res. Lett.</em>, 2016.
+<a href="https://doi.org/10.1002/2015GL067152">doi:10.1002/2015GL067152</a>.
+    [&nbsp;<a href="javascript:disp('@article{klymaketal16,\n    author = &amp;#34;Klymak, Jody M and Shearman, R Kipp and Gula, Jonathan and Lee, Craig M and D&amp;#39;Asaro, Eric A and Thomas, Leif N and Harcourt, Ramsey R and Shcherbina, Andrey Y and Sundermeyer, Miles A and Molemaker, Jeroen and others&amp;#34;,\n    date-added = &amp;#34;2016-02-05 18:19:05 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-02-05 18:22:18 +0000&amp;#34;,\n    doi = &amp;#34;10.1002/2015GL067152&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Geophys. Res. Lett.&amp;#34;,\n    publisher = &amp;#34;Wiley Online Library&amp;#34;,\n    title = &amp;#34;Submesoscale streamers exchange water on the north wall of the {Gulf} {Stream}&amp;#34;,\n    year = &amp;#34;2016&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QcC4uLy4uLy4uLy4uL0xpYnJhcnkvTW9iaWxlIERvY3VtZW50cy8zTDY4S1FCNEhHfmNvbX5yZWFkZGxlfkNvbW1vbkRvY3VtZW50cy9Eb2N1bWVudHMvUERGRmlsZXMva2x5bWFrZXRhbDE2YS5wZGbSFwsYGVdOUy5kYXRhTxECKgAAAAACKgACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAA0IkrykgrAAADV7xlEWtseW1ha2V0YWwxNmEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANXxnzUM8ISAAAAAAAAAAAABAAGAAAJIAAAAAAAAAAAAAAAAAAAAAhQREZGaWxlcwAQAAgAANCJnEoAAAARAAgAANQ0JIIAAAABABwDV7xlA1dxjQNXcYwDV1URAHyoQABiFXsAApPTAAIAf01hY2ludG9zaCBIRDpVc2VyczoAamtseW1hazoATGlicmFyeToATW9iaWxlIERvY3VtZW50czoAM0w2OEtRQjRIR35jb21+cmVhZGRsZX4jMzU3NzE4QzoARG9jdW1lbnRzOgBQREZGaWxlczoAa2x5bWFrZXRhbDE2YS5wZGYAAA4AJAARAGsAbAB5AG0AYQBrAGUAdABhAGwAMQA2AGEALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAHJVc2Vycy9qa2x5bWFrL0xpYnJhcnkvTW9iaWxlIERvY3VtZW50cy8zTDY4S1FCNEhHfmNvbX5yZWFkZGxlfkNvbW1vbkRvY3VtZW50cy9Eb2N1bWVudHMvUERGRmlsZXMva2x5bWFrZXRhbDE2YS5wZGYAEwABLwAAFQACAA7//wAAgAbSGxwdHlokY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGjHR8gVk5TRGF0YVhOU09iamVjdNIbHCIjXE5TRGljdGlvbmFyeaIiIF8QD05TS2V5ZWRBcmNoaXZlctEmJ1Ryb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AIQAjgEBAQYBDgM8Az4DQwNOA1cDZQNpA3ADeQN+A4sDjgOgA6MDqAAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAOq&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1002/2015GL067152&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Jody&nbsp;M. Klymak, Harper&nbsp;L. Simmons, Dmitry Braznikov, Samuel Kelly, Jennifer&nbsp;A. MacKinnon, Matthew&nbsp;H. Alford, Robert Pinkel, and Jonathan&nbsp;D. Nash.
+Reflection of linear internal tides from realistic topography: the <span class="bibtex-protected">Tasman</span> continental slope.
+<em>J. Phys. Oceanogr.</em>, 2016.
+<a href="https://doi.org/10.1175/jpo-d-16-0061.1">doi:10.1175/jpo-d-16-0061.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{klymaketal16b,\n    author = &amp;#34;Klymak, Jody M. and Simmons, Harper L. and Braznikov, Dmitry and Kelly, Samuel and MacKinnon, Jennifer A. and Alford, Matthew H. and Pinkel, Robert and Nash, Jonathan D.&amp;#34;,\n    date-added = &amp;#34;2016-10-12 23:12:59 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-10-12 23:15:11 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/jpo-d-16-0061.1&amp;#34;,\n    issn = &amp;#34;1520-0485&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    publisher = &amp;#34;American Meteorological Society&amp;#34;,\n    title = &amp;#34;Reflection of linear internal tides from realistic topography: The {Tasman} continental slope&amp;#34;,\n    year = &amp;#34;2016&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QcS4uLy4uLy4uLy4uL0xpYnJhcnkvTW9iaWxlIERvY3VtZW50cy8zTDY4S1FCNEhHfmNvbX5yZWFkZGxlfkNvbW1vbkRvY3VtZW50cy9Eb2N1bWVudHMvUERGRmlsZXMva2x5bWFrZXRhbDE2YmEucGRm0hcLGBlXTlMuZGF0YU8RAi4AAAAAAi4AAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAANCJK8pIKwAAA1e8ZRJrbHltYWtldGFsMTZiYS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADV85H1DPCBwAAAAAAAAAAAAQABgAACSAAAAAAAAAAAAAAAAAAAAAIUERGRmlsZXMAEAAIAADQiZxKAAAAEQAIAADUNCR3AAAAAQAcA1e8ZQNXcY0DV3GMA1dVEQB8qEAAYhV7AAKT0wACAIBNYWNpbnRvc2ggSEQ6VXNlcnM6AGprbHltYWs6AExpYnJhcnk6AE1vYmlsZSBEb2N1bWVudHM6ADNMNjhLUUI0SEd+Y29tfnJlYWRkbGV+IzM1NzcxOEM6AERvY3VtZW50czoAUERGRmlsZXM6AGtseW1ha2V0YWwxNmJhLnBkZgAOACYAEgBrAGwAeQBtAGEAawBlAHQAYQBsADEANgBiAGEALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAHNVc2Vycy9qa2x5bWFrL0xpYnJhcnkvTW9iaWxlIERvY3VtZW50cy8zTDY4S1FCNEhHfmNvbX5yZWFkZGxlfkNvbW1vbkRvY3VtZW50cy9Eb2N1bWVudHMvUERGRmlsZXMva2x5bWFrZXRhbDE2YmEucGRmAAATAAEvAAAVAAIADv//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOAQIBBwEPA0EDQwNIA1MDXANqA24DdQN+A4MDkAOTA6UDqAOtAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA68=&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/JPO-D-16-0061.1&amp;#34;,\n    bdsk-url-2 = &amp;#34;http://dx.doi.org/10.1175/jpo-d-16-0061.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Leif&nbsp;N Thomas, John&nbsp;R Taylor, Eric&nbsp;A D'Asaro, Craig&nbsp;M Lee, Jody&nbsp;M Klymak, and Andrey Shcherbina.
+Symmetric instability, inertial oscillations, and turbulence at the <span class="bibtex-protected">Gulf</span> <span class="bibtex-protected">Stream</span> front.
+<em>J. Phys. Oceanogr.</em>, 46(1):197–217, 2016.
+<a href="https://doi.org/10.1175/JPO-D-15-0008.1">doi:10.1175/JPO-D-15-0008.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{thomasetal16,\n    author = &amp;#34;Thomas, Leif N and Taylor, John R and D&amp;#39;Asaro, Eric A and Lee, Craig M and Klymak, Jody M and Shcherbina, Andrey&amp;#34;,\n    date-added = &amp;#34;2016-02-05 18:21:23 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-10-12 23:20:08 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/JPO-D-15-0008.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    number = &amp;#34;1&amp;#34;,\n    pages = &amp;#34;197--217&amp;#34;,\n    title = &amp;#34;Symmetric instability, inertial oscillations, and turbulence at the {Gulf} {Stream} front&amp;#34;,\n    volume = &amp;#34;46&amp;#34;,\n    year = &amp;#34;2016&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/JPO-D-15-0008.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Gunnar Voet, Matthew&nbsp;H. Alford, James&nbsp;B. Girton, Glenn&nbsp;S. Carter, John&nbsp;B. Mickett, and Jody&nbsp;M. Klymak.
+Warming and weakening of the abyssal flow through <span class="bibtex-protected">Samoan</span> <span class="bibtex-protected">Passage</span>.
+<em>J. Phys. Oceanogr.</em>, 46(8):2389–2401, 2016.
+<a href="https://doi.org/10.1175/jpo-d-16-0063.1">doi:10.1175/jpo-d-16-0063.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{voetetal16a,\n    author = &amp;#34;Voet, Gunnar and Alford, Matthew H. and Girton, James B. and Carter, Glenn S. and Mickett, John B. and Klymak, Jody M.&amp;#34;,\n    date-added = &amp;#34;2016-10-12 23:14:02 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-10-12 23:19:20 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/jpo-d-16-0063.1&amp;#34;,\n    issn = &amp;#34;1520-0485&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    number = &amp;#34;8&amp;#34;,\n    pages = &amp;#34;2389--2401&amp;#34;,\n    publisher = &amp;#34;American Meteorological Society&amp;#34;,\n    title = &amp;#34;Warming and Weakening of the Abyssal Flow through {Samoan} {Passage}&amp;#34;,\n    volume = &amp;#34;46&amp;#34;,\n    year = &amp;#34;2016&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/JPO-D-16-0063.1&amp;#34;,\n    bdsk-url-2 = &amp;#34;http://dx.doi.org/10.1175/jpo-d-16-0063.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+
+    <h3> 2015 </h3>
+    <p>
+    Matthew&nbsp;H. Alford, Thomas Peacock, Jennifer&nbsp;A. MacKinnon, Jonathan&nbsp;D. Nash, Maarten&nbsp;C. Buijsman, Luca&nbsp;R. Centuroni, Shenn-Yu Chao, Ming-Huei Chang, David&nbsp;M. Farmer, Oliver&nbsp;B. Fringer, Ke-Hsien Fu, Patrick&nbsp;C. Gallacher, Hans&nbsp;C. Graber, Karl&nbsp;R. Helfrich, Steven&nbsp;M. Jachec, Christopher&nbsp;R. Jackson, Jody&nbsp;M. Klymak, Dong&nbsp;S. Ko, Sen Jan, T.&nbsp;M.&nbsp;Shaun Johnston, Sonya Legg, I-Huan Lee, Ren-Chieh Lien, Matthieu&nbsp;J. Mercier, James&nbsp;N. Moum, Ruth Musgrave, Jae-Hun Park, Andrew&nbsp;I. Pickering, Robert Pinkel, Luc Rainville, Steven&nbsp;R. Ramp, Daniel&nbsp;L. Rudnick, Sutanu Sarkar, Alberto Scotti, Harper&nbsp;L. Simmons, Louis&nbsp;C. St&nbsp;Laurent, Subhas&nbsp;K. Venayagamoorthy, Yu-Huai Wang, Joe Wang, Yiing&nbsp;J. Yang, Theresa Paluszkiewicz, and Tswen-Yung (David)&nbsp;Tang.
+The formation and fate of internal waves in the <span class="bibtex-protected">South</span> <span class="bibtex-protected">China</span> <span class="bibtex-protected">Sea</span>.
+<em>Nature</em>, 521(7550):65–69, 2015.
+<a href="https://doi.org/10.1038/nature14399">doi:10.1038/nature14399</a>.
+    [&nbsp;<a href="javascript:disp('@article{alfordetal15a,\n    author = &amp;#34;Alford, Matthew H. and Peacock, Thomas and MacKinnon, Jennifer A. and Nash, Jonathan D. and Buijsman, Maarten C. and Centuroni, Luca R. and Chao, Shenn-Yu and Chang, Ming-Huei and Farmer, David M. and Fringer, Oliver B. and Fu, Ke-Hsien and Gallacher, Patrick C. and Graber, Hans C. and Helfrich, Karl R. and Jachec, Steven M. and Jackson, Christopher R. and Klymak, Jody M. and Ko, Dong S. and Jan, Sen and Johnston, T. M. Shaun and Legg, Sonya and Lee, I-Huan and Lien, Ren-Chieh and Mercier, Matthieu J. and Moum, James N. and Musgrave, Ruth and Park, Jae-Hun and Pickering, Andrew I. and Pinkel, Robert and Rainville, Luc and Ramp, Steven R. and Rudnick, Daniel L. and Sarkar, Sutanu and Scotti, Alberto and Simmons, Harper L. and St Laurent, Louis C. and Venayagamoorthy, Subhas K. and Wang, Yu-Huai and Wang, Joe and Yang, Yiing J. and Paluszkiewicz, Theresa and (David) Tang, Tswen-Yung&amp;#34;,\n    date = &amp;#34;2015/05/07/print&amp;#34;,\n    date-added = &amp;#34;2015-05-11 20:55:20 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-02-05 18:38:59 +0000&amp;#34;,\n    day = &amp;#34;07&amp;#34;,\n    doi = &amp;#34;10.1038/nature14399&amp;#34;,\n    isbn = &amp;#34;0028-0836&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Nature&amp;#34;,\n    l3 = &amp;#34;10.1038/nature14399&amp;#34;,\n    m3 = &amp;#34;Letter&amp;#34;,\n    number = &amp;#34;7550&amp;#34;,\n    pages = &amp;#34;65--69&amp;#34;,\n    publisher = &amp;#34;Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.&amp;#34;,\n    title = &amp;#34;The formation and fate of internal waves in the {South} {China} {Sea}&amp;#34;,\n    ty = &amp;#34;JOUR&amp;#34;,\n    volume = &amp;#34;521&amp;#34;,\n    year = &amp;#34;2015&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QJC4uLy4uLy4uL1BERkZpbGVzL0FsZm9yZGV0YWwxNWFhLnBkZtIXCxgZV05TLmRhdGFPEQGiAAAAAAGiAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADOl0lTSCsAAAB96kASQWxmb3JkZXRhbDE1YWEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX7vR9F2ZP0AAAAAAAAAAAADAAIAAAkgAAAAAAAAAAAAAAAAAAAACFBERkZpbGVzABAACAAAzperwwAAABEACAAA0XbHbQAAAAEAEAB96kAACb+HAAkyNQACZI4AAgBCTWFjaW50b3NoIEhEOlVzZXJzOgBqa2x5bWFrOgBEcm9wYm94OgBQREZGaWxlczoAQWxmb3JkZXRhbDE1YWEucGRmAA4AJgASAEEAbABmAG8AcgBkAGUAdABhAGwAMQA1AGEAYQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAMVVzZXJzL2prbHltYWsvRHJvcGJveC9QREZGaWxlcy9BbGZvcmRldGFsMTVhYS5wZGYAABMAAS8AABUAAgAO//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4AtQC6AMICaAJqAm8CegKDApEClQKcAqUCqgK3AroCzALPAtQAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC1g==&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Jeannette&nbsp;M Bedard, Svein Vagle, Jody&nbsp;M Klymak, William&nbsp;J Williams, Beth Curry, and Craig&nbsp;M Lee.
+Outside influences on the water column of cumberland sound, baffin island.
+<em>J. Geophys. Res.</em>, 120(7):5000–5018, 2015.
+<a href="https://doi.org/10.1002/2015JC010811">doi:10.1002/2015JC010811</a>.
+    [&nbsp;<a href="javascript:disp('@article{bedardetal15b,\n    author = &amp;#34;Bedard, Jeannette M and Vagle, Svein and Klymak, Jody M and Williams, William J and Curry, Beth and Lee, Craig M&amp;#34;,\n    date-added = &amp;#34;2016-02-05 18:26:56 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-02-05 18:28:06 +0000&amp;#34;,\n    doi = &amp;#34;10.1002/2015JC010811&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Geophys. Res.&amp;#34;,\n    number = &amp;#34;7&amp;#34;,\n    pages = &amp;#34;5000--5018&amp;#34;,\n    publisher = &amp;#34;Wiley Online Library&amp;#34;,\n    title = &amp;#34;Outside influences on the water column of Cumberland Sound, Baffin Island&amp;#34;,\n    volume = &amp;#34;120&amp;#34;,\n    year = &amp;#34;2015&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QKC4uLy4uLy4uL1BERkZpbGVzL2JlZGFyZDIwMTVvdXRzaWRlYS5wZGbSFwsYGVdOUy5kYXRhTxEBsgAAAAABsgACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAzpdJU0grAAAAfepAFmJlZGFyZDIwMTVvdXRzaWRlYS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJU5wzR9oKmAAAAAAAAAAAAAwACAAAJIAAAAAAAAAAAAAAAAAAAAAhQREZGaWxlcwAQAAgAAM6Xq8MAAAARAAgAANH25RYAAAABABAAfepAAAm/hwAJMjUAAmSOAAIARk1hY2ludG9zaCBIRDpVc2VyczoAamtseW1hazoARHJvcGJveDoAUERGRmlsZXM6AGJlZGFyZDIwMTVvdXRzaWRlYS5wZGYADgAuABYAYgBlAGQAYQByAGQAMgAwADEANQBvAHUAdABzAGkAZABlAGEALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASADVVc2Vycy9qa2x5bWFrL0Ryb3Bib3gvUERGRmlsZXMvYmVkYXJkMjAxNW91dHNpZGVhLnBkZgAAEwABLwAAFQACAA7//wAAgAbSGxwdHlokY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGjHR8gVk5TRGF0YVhOU09iamVjdNIbHCIjXE5TRGljdGlvbmFyeaIiIF8QD05TS2V5ZWRBcmNoaXZlctEmJ1Ryb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AIQAjgC5AL4AxgJ8An4CgwKOApcCpQKpArACuQK+AssCzgLgAuMC6AAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAALq&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    J<span class="bibtex-protected">ö</span>rn Callies, Raffaele Ferrari, Jody&nbsp;M Klymak, and Jonathan Gula.
+Seasonality in submesoscale turbulence.
+<em>Nature communications</em>, 2015.
+<a href="https://doi.org/10.1038/ncomms7862">doi:10.1038/ncomms7862</a>.
+    [&nbsp;<a href="javascript:disp('@article{calliesetal15,\n    author = {Callies, J{\&amp;#34;o}rn and Ferrari, Raffaele and Klymak, Jody M and Gula, Jonathan},\n    date-added = &amp;#34;2015-05-20 03:52:56 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-02-05 18:41:39 +0000&amp;#34;,\n    doi = &amp;#34;10.1038/ncomms7862&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Nature communications&amp;#34;,\n    publisher = &amp;#34;Nature Publishing Group&amp;#34;,\n    title = &amp;#34;Seasonality in submesoscale turbulence&amp;#34;,\n    volume = &amp;#34;6&amp;#34;,\n    year = &amp;#34;2015&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1038/ncomms7862&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Johannes Gemmrich and Jody&nbsp;M Klymak.
+Dissipation of internal wave energy generated on a critical slope.
+<em>J. Phys. Oceanogr.</em>, 45:2221—2238, 2015.
+<a href="https://doi.org/10.1175/JPO-D-14-0236.1">doi:10.1175/JPO-D-14-0236.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{gemmrichklymak15,\n    author = &amp;#34;Gemmrich, Johannes and Klymak, Jody M&amp;#34;,\n    date-added = &amp;#34;2015-05-20 03:52:10 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-02-05 18:40:13 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/JPO-D-14-0236.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    pages = &amp;#34;2221---2238&amp;#34;,\n    title = &amp;#34;Dissipation of internal wave energy generated on a critical slope&amp;#34;,\n    volume = &amp;#34;45&amp;#34;,\n    year = &amp;#34;2015&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QdC4uLy4uLy4uLy4uL0xpYnJhcnkvTW9iaWxlIERvY3VtZW50cy8zTDY4S1FCNEhHfmNvbX5yZWFkZGxlfkNvbW1vbkRvY3VtZW50cy9Eb2N1bWVudHMvUERGRmlsZXMvZ2VtbXJpY2hrbHltYWsxNWEucGRm0hcLGBlXTlMuZGF0YU8RAjoAAAAAAjoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAANCJK8pIKwAAA1e8ZRVnZW1tcmljaGtseW1hazE1YS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADV84F1FIh5AAAAAAAAAAAAAQABgAACSAAAAAAAAAAAAAAAAAAAAAIUERGRmlsZXMAEAAIAADQiZxKAAAAEQAIAADUUpJkAAAAAQAcA1e8ZQNXcY0DV3GMA1dVEQB8qEAAYhV7AAKT0wACAINNYWNpbnRvc2ggSEQ6VXNlcnM6AGprbHltYWs6AExpYnJhcnk6AE1vYmlsZSBEb2N1bWVudHM6ADNMNjhLUUI0SEd+Y29tfnJlYWRkbGV+IzM1NzcxOEM6AERvY3VtZW50czoAUERGRmlsZXM6AGdlbW1yaWNoa2x5bWFrMTVhLnBkZgAADgAsABUAZwBlAG0AbQByAGkAYwBoAGsAbAB5AG0AYQBrADEANQBhAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgB2VXNlcnMvamtseW1hay9MaWJyYXJ5L01vYmlsZSBEb2N1bWVudHMvM0w2OEtRQjRIR35jb21+cmVhZGRsZX5Db21tb25Eb2N1bWVudHMvRG9jdW1lbnRzL1BERkZpbGVzL2dlbW1yaWNoa2x5bWFrMTVhLnBkZgATAAEvAAAVAAIADv//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOAQUBCgESA1ADUgNXA2IDawN5A30DhAONA5IDnwOiA7QDtwO8AAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA74=&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/JPO-D-14-0236.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Roberta&nbsp;C Hamme, Johanna&nbsp;E Berry, Jody&nbsp;M Klymak, and Kenneth&nbsp;L Denman.
+In situ o2 and n2 measurements detect deep-water renewal dynamics in seasonally-anoxic saanich inlet.
+<em>Cont. Shelf Res.</em>, 106:107–117, 2015.
+    [&nbsp;<a href="javascript:disp('@article{hammeetal15,\n    author = &amp;#34;Hamme, Roberta C and Berry, Johanna E and Klymak, Jody M and Denman, Kenneth L&amp;#34;,\n    date-added = &amp;#34;2015-10-16 21:02:05 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-02-05 18:38:01 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Cont. Shelf Res.&amp;#34;,\n    pages = &amp;#34;107--117&amp;#34;,\n    publisher = &amp;#34;Elsevier&amp;#34;,\n    title = &amp;#34;In situ O2 and N2 measurements detect deep-water renewal dynamics in seasonally-anoxic Saanich Inlet&amp;#34;,\n    volume = &amp;#34;106&amp;#34;,\n    year = &amp;#34;2015&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QIi4uLy4uLy4uL1BERkZpbGVzL2hhbW1lZXRhbDE1YS5wZGbSFwsYGVdOUy5kYXRhTxEBmgAAAAABmgACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAzpdJU0grAAAAfepAEGhhbW1lZXRhbDE1YS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJd8qnS8h7GAAAAAAAAAAAAAwACAAAJIAAAAAAAAAAAAAAAAAAAAAhQREZGaWxlcwAQAAgAAM6Xq8MAAAARAAgAANLyj0YAAAABABAAfepAAAm/hwAJMjUAAmSOAAIAQE1hY2ludG9zaCBIRDpVc2VyczoAamtseW1hazoARHJvcGJveDoAUERGRmlsZXM6AGhhbW1lZXRhbDE1YS5wZGYADgAiABAAaABhAG0AbQBlAGUAdABhAGwAMQA1AGEALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAC9Vc2Vycy9qa2x5bWFrL0Ryb3Bib3gvUERGRmlsZXMvaGFtbWVldGFsMTVhLnBkZgAAEwABLwAAFQACAA7//wAAgAbSGxwdHlokY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGjHR8gVk5TRGF0YVhOU09iamVjdNIbHCIjXE5TRGljdGlvbmFyeaIiIF8QD05TS2V5ZWRBcmNoaXZlctEmJ1Ryb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AIQAjgCzALgAwAJeAmACZQJwAnkChwKLApICmwKgAq0CsALCAsUCygAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAALM&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Jody&nbsp;M. Klymak, William Crawford, Matthew&nbsp;H. Alford, Jennifer&nbsp;A. MacKinnon, and Robert Pinkel.
+Along-isopycnal variability of spice in the <span class="bibtex-protected">North</span> <span class="bibtex-protected">Pacific</span>.
+<em>J. Geophys. Res.</em>, pages 2169&ndash;9291, 2015.
+<a href="https://doi.org/10.1002/2013JC009421">doi:10.1002/2013JC009421</a>.
+    [&nbsp;<a href="javascript:disp('@article{klymaketal15a,\n    author = &amp;#34;Klymak, Jody M. and Crawford, William and Alford, Matthew H. and MacKinnon, Jennifer A. and Pinkel, Robert&amp;#34;,\n    date-added = &amp;#34;2015-03-04 19:28:57 +0000&amp;#34;,\n    date-modified = &amp;#34;2015-05-20 16:34:13 +0000&amp;#34;,\n    doi = &amp;#34;10.1002/2013JC009421&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Geophys. Res.&amp;#34;,\n    keywords = &amp;#34;lateral mixing, ocean turbulence, upper ocean dynamics, submesoscale dynamics&amp;#34;,\n    pages = &amp;#34;2169-9291&amp;#34;,\n    title = &amp;#34;Along-isopycnal variability of spice in the {North} {Pacific}&amp;#34;,\n    year = &amp;#34;2015&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QJC4uLy4uLy4uL1BERkZpbGVzL2tseW1ha2V0YWwxNWFhLnBkZtIXCxgZV05TLmRhdGFPEQGiAAAAAAGiAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADOl0lTSCsAAAB96kASa2x5bWFrZXRhbDE1YWEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAproCtMIcDYAAAAAAAAAAAADAAIAAAkgAAAAAAAAAAAAAAAAAAAACFBERkZpbGVzABAACAAAzperwwAAABEACAAA0wjgtgAAAAEAEAB96kAACb+HAAkyNQACZI4AAgBCTWFjaW50b3NoIEhEOlVzZXJzOgBqa2x5bWFrOgBEcm9wYm94OgBQREZGaWxlczoAa2x5bWFrZXRhbDE1YWEucGRmAA4AJgASAGsAbAB5AG0AYQBrAGUAdABhAGwAMQA1AGEAYQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAMVVzZXJzL2prbHltYWsvRHJvcGJveC9QREZGaWxlcy9rbHltYWtldGFsMTVhYS5wZGYAABMAAS8AABUAAgAO//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4AtQC6AMICaAJqAm8CegKDApEClQKcAqUCqgK3AroCzALPAtQAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC1g==&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1002/2013JC009421&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    E&nbsp;Kunze, JM&nbsp;Klymak, R-C Lien, R&nbsp;Ferrari, CM&nbsp;Lee, MA&nbsp;Sundermeyer, and L&nbsp;Goodman.
+Submesoscale water mass spectra in the <span class="bibtex-protected">Sargasso</span> <span class="bibtex-protected">Sea</span>.
+<em>J. Phys. Oceanogr.</em>, 2015.
+<a href="https://doi.org/10.1175/JPO-D-14-0108.1">doi:10.1175/JPO-D-14-0108.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{kunzeetal15,\n    author = &amp;#34;Kunze, E and Klymak, JM and Lien, R-C and Ferrari, R and Lee, CM and Sundermeyer, MA and Goodman, L&amp;#34;,\n    date-added = &amp;#34;2015-05-20 03:53:32 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-02-05 18:42:41 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/JPO-D-14-0108.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    title = &amp;#34;Submesoscale Water Mass Spectra in the {Sargasso} {Sea}&amp;#34;,\n    volume = &amp;#34;45&amp;#34;,\n    year = &amp;#34;2015&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QIi4uLy4uLy4uL1BERkZpbGVzL2t1bnplZXRhbDE1YS5wZGbSFwsYGVdOUy5kYXRhTxEBmgAAAAABmgACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAzpdJU0grAAAAfepAEGt1bnplZXRhbDE1YS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJU5wnS2i0pAAAAAAAAAAAAAwACAAAJIAAAAAAAAAAAAAAAAAAAAAhQREZGaWxlcwAQAAgAAM6Xq8MAAAARAAgAANLanakAAAABABAAfepAAAm/hwAJMjUAAmSOAAIAQE1hY2ludG9zaCBIRDpVc2VyczoAamtseW1hazoARHJvcGJveDoAUERGRmlsZXM6AGt1bnplZXRhbDE1YS5wZGYADgAiABAAawB1AG4AegBlAGUAdABhAGwAMQA1AGEALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAC9Vc2Vycy9qa2x5bWFrL0Ryb3Bib3gvUERGRmlsZXMva3VuemVldGFsMTVhLnBkZgAAEwABLwAAFQACAA7//wAAgAbSGxwdHlokY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGjHR8gVk5TRGF0YVhOU09iamVjdNIbHCIjXE5TRGljdGlvbmFyeaIiIF8QD05TS2V5ZWRBcmNoaXZlctEmJ1Ryb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AIQAjgCzALgAwAJeAmACZQJwAnkChwKLApICmwKgAq0CsALCAsUCygAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAALM&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Andrey&nbsp;Y Shcherbina, Miles&nbsp;A Sundermeyer, Eric Kunze, Eric D'Asaro, Gualtiero Badin, Daniel Birch, Anne-Marie&nbsp;EG Brunner-Suzuki, J<span class="bibtex-protected">ö</span>rn Callies, Brandy&nbsp;T Kuebel&nbsp;Cervantes, Mariona Claret, and others.
+The <span class="bibtex-protected">LatMix</span> summer campaign: submesoscale stirring in the upper ocean.
+<em>Bull. Am. Meteorol. Soc.</em>, 96(8):1257–1279, 2015.
+<a href="https://doi.org/10.1175/BAMS-D-14-00015.1">doi:10.1175/BAMS-D-14-00015.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{shcherbina2015latmix,\n    author = {Shcherbina, Andrey Y and Sundermeyer, Miles A and Kunze, Eric and D&amp;#39;Asaro, Eric and Badin, Gualtiero and Birch, Daniel and Brunner-Suzuki, Anne-Marie EG and Callies, J{\&amp;#34;o}rn and Kuebel Cervantes, Brandy T and Claret, Mariona and others},\n    date-added = &amp;#34;2016-02-05 18:23:18 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-02-05 18:25:24 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/BAMS-D-14-00015.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Bull. Am. Meteorol. Soc.&amp;#34;,\n    number = &amp;#34;8&amp;#34;,\n    pages = &amp;#34;1257--1279&amp;#34;,\n    title = &amp;#34;The {LatMix} summer campaign: Submesoscale stirring in the upper ocean&amp;#34;,\n    volume = &amp;#34;96&amp;#34;,\n    year = &amp;#34;2015&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/BAMS-D-14-00015.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Gunnar Voet, James&nbsp;B Girton, Matthew&nbsp;H Alford, Glenn&nbsp;S Carter, Jody&nbsp;M Klymak, and John&nbsp;B Mickett.
+Pathways, volume transport and mixing of abyssal water in the <span class="bibtex-protected">Samoan</span> <span class="bibtex-protected">Passage</span>.
+<em>J. Phys. Oceanogr.</em>, 45:562–588, 2015.
+<a href="https://doi.org/10.1175/JPO-D-14-0096.1">doi:10.1175/JPO-D-14-0096.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{voetetal15,\n    author = &amp;#34;Voet, Gunnar and Girton, James B and Alford, Matthew H and Carter, Glenn S and Klymak, Jody M and Mickett, John B&amp;#34;,\n    date-added = &amp;#34;2015-01-28 16:45:37 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-02-05 18:26:32 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/JPO-D-14-0096.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    pages = &amp;#34;562--588&amp;#34;,\n    title = &amp;#34;Pathways, Volume Transport and Mixing of Abyssal Water in the {Samoan} {Passage}&amp;#34;,\n    volume = &amp;#34;45&amp;#34;,\n    year = &amp;#34;2015&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QIS4uLy4uLy4uL1BERkZpbGVzL3ZvZXRldGFsMTRhLnBkZtIXCxgZV05TLmRhdGFPEQGWAAAAAAGWAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADOl0lTSCsAAAB96kAPdm9ldGV0YWwxNGEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAThM8NDuUsEAAAAAAAAAAAADAAIAAAkgAAAAAAAAAAAAAAAAAAAACFBERkZpbGVzABAACAAAzperwwAAABEACAAA0O7DQQAAAAEAEAB96kAACb+HAAkyNQACZI4AAgA/TWFjaW50b3NoIEhEOlVzZXJzOgBqa2x5bWFrOgBEcm9wYm94OgBQREZGaWxlczoAdm9ldGV0YWwxNGEucGRmAAAOACAADwB2AG8AZQB0AGUAdABhAGwAMQA0AGEALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAC5Vc2Vycy9qa2x5bWFrL0Ryb3Bib3gvUERGRmlsZXMvdm9ldGV0YWwxNGEucGRmABMAAS8AABUAAgAO//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4AsgC3AL8CWQJbAmACawJ0AoIChgKNApYCmwKoAqsCvQLAAsUAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACxw==&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Di&nbsp;Wan, Jody&nbsp;M. Klymak, Michael&nbsp;G.G. Foreman, and Stephen&nbsp;F. Cross.
+Barotropic tidal dynamics in a frictional subsidiary channel.
+<em>Cont. Shelf Res.</em>, 2015.
+<a href="https://doi.org/10.1016/j.csr.2015.05.011">doi:10.1016/j.csr.2015.05.011</a>.
+    [&nbsp;<a href="javascript:disp('@article{wanetal15,\n    author = &amp;#34;Wan, Di and Klymak, Jody M. and Foreman, Michael G.G. and Cross, Stephen F.&amp;#34;,\n    abstract = &amp;#34;Abstract Barotropic M 2 tidal dynamics are studied in a subsidiary tidal channel in Kyuquot Sound, Canada, a site proposed for multi-trophic aquaculture. A regional model with no stratification or forcing other than the tide found that the sea level in the subsidiary channel responded in phase with the rest of Kyuquot Sound, but that the velocity response was almost 180$\,^{\circ}$ out of phase. Further, this velocity difference was strongly dependent on the choice of viscous parameterization in the model. A simple linear analytical model was developed to explain the simulated changes in terms of the phase lag induced by viscosity, and allowed a larger parameter regime to be explored. These results suggest that verifying models of smaller channels using sea level measurements alone is inadequate, and velocity measurements are necessary.&amp;#34;,\n    date-added = &amp;#34;2015-06-05 18:10:40 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-02-05 18:38:15 +0000&amp;#34;,\n    doi = &amp;#34;10.1016/j.csr.2015.05.011&amp;#34;,\n    issn = &amp;#34;0278-4343&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Cont. Shelf Res.&amp;#34;,\n    keywords = &amp;#34;Energy dissipation&amp;#34;,\n    title = &amp;#34;Barotropic tidal dynamics in a frictional subsidiary channel&amp;#34;,\n    year = &amp;#34;2015&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://www.sciencedirect.com/science/article/pii/S0278434315001429&amp;#34;,\n    bdsk-url-2 = &amp;#34;http://dx.doi.org/10.1016/j.csr.2015.05.011&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+
+    <h3> 2014 </h3>
+    <p>
+    Matthew&nbsp;H Alford, Jody&nbsp;M Klymak, and Glenn&nbsp;S Carter.
+Breaking internal lee waves at <span class="bibtex-protected">Kaena</span> <span class="bibtex-protected">Ridge</span>, <span class="bibtex-protected">Hawaii</span>.
+<em>Geophys. Res. Lett.</em>, 2014.
+<a href="https://doi.org/10.1002/2013GL059070">doi:10.1002/2013GL059070</a>.
+    [&nbsp;<a href="javascript:disp('@article{alfordetal14,\n    author = &amp;#34;Alford, Matthew H and Klymak, Jody M and Carter, Glenn S&amp;#34;,\n    date-added = &amp;#34;2014-01-25 21:42:34 +0000&amp;#34;,\n    date-modified = &amp;#34;2014-01-26 04:02:10 +0000&amp;#34;,\n    doi = &amp;#34;10.1002/2013GL059070&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Geophys. Res. Lett.&amp;#34;,\n    title = &amp;#34;Breaking internal lee waves at {Kaena} {Ridge}, {Hawaii}&amp;#34;,\n    year = &amp;#34;2014&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QIy4uLy4uLy4uL1BERkZpbGVzL2FsZm9yZGV0YWwxNGEucGRm0hcLGBlXTlMuZGF0YU8RAZ4AAAAAAZ4AAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAM6XSVNIKwAAAH3qQBFhbGZvcmRldGFsMTRhLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABN+N60OwDigAAAAAAAAAAAAMAAgAACSAAAAAAAAAAAAAAAAAAAAAIUERGRmlsZXMAEAAIAADOl6vDAAAAEQAIAADQ7HQKAAAAAQAQAH3qQAAJv4cACTI1AAJkjgACAEFNYWNpbnRvc2ggSEQ6VXNlcnM6AGprbHltYWs6AERyb3Bib3g6AFBERkZpbGVzOgBhbGZvcmRldGFsMTRhLnBkZgAADgAkABEAYQBsAGYAbwByAGQAZQB0AGEAbAAxADQAYQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAMFVzZXJzL2prbHltYWsvRHJvcGJveC9QREZGaWxlcy9hbGZvcmRldGFsMTRhLnBkZgATAAEvAAAVAAIADv//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOALQAuQDBAmMCZQJqAnUCfgKMApAClwKgAqUCsgK1AscCygLPAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAtE=&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Maarten&nbsp;C Buijsman, Jody&nbsp;M Klymak, Sonya Legg, Matthew&nbsp;H Alford, David Farmer, Jennifer&nbsp;A MacKinnon, Jonathan&nbsp;D Nash, Jae-Hun Park, Andy Pickering, and Harper Simmons.
+Three-dimensional double-ridge internal tide resonance in <span class="bibtex-protected">Luzon</span> <span class="bibtex-protected">Strait</span>.
+<em>J. Phys. Oceanogr.</em>, 44(3):850–869, 2014.
+<a href="https://doi.org/10.1175/JPO-D-13-024.1">doi:10.1175/JPO-D-13-024.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{buijsmanetal14,\n    author = &amp;#34;Buijsman, Maarten C and Klymak, Jody M and Legg, Sonya and Alford, Matthew H and Farmer, David and MacKinnon, Jennifer A and Nash, Jonathan D and Park, Jae-Hun and Pickering, Andy and Simmons, Harper&amp;#34;,\n    date-added = &amp;#34;2015-01-28 16:42:10 +0000&amp;#34;,\n    date-modified = &amp;#34;2016-03-14 17:41:58 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/JPO-D-13-024.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    number = &amp;#34;3&amp;#34;,\n    pages = &amp;#34;850--869&amp;#34;,\n    title = &amp;#34;Three-Dimensional Double-Ridge Internal Tide Resonance in {Luzon} {Strait}&amp;#34;,\n    volume = &amp;#34;44&amp;#34;,\n    year = &amp;#34;2014&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8Qci4uLy4uLy4uLy4uL0xpYnJhcnkvTW9iaWxlIERvY3VtZW50cy8zTDY4S1FCNEhHfmNvbX5yZWFkZGxlfkNvbW1vbkRvY3VtZW50cy9Eb2N1bWVudHMvUERGRmlsZXMvYnVpanNtYW5ldGFsMTRiLnBkZtIXCxgZV05TLmRhdGFPEQIyAAAAAAIyAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADQiSvKSCsAAANXvGUTYnVpanNtYW5ldGFsMTRiLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1fOc9QNiwAAAAAAAAAAAAAEAAYAAAkgAAAAAAAAAAAAAAAAAAAACFBERkZpbGVzABAACAAA0ImcSgAAABEACAAA1A3tcAAAAAEAHANXvGUDV3GNA1dxjANXVREAfKhAAGIVewACk9MAAgCBTWFjaW50b3NoIEhEOlVzZXJzOgBqa2x5bWFrOgBMaWJyYXJ5OgBNb2JpbGUgRG9jdW1lbnRzOgAzTDY4S1FCNEhHfmNvbX5yZWFkZGxlfiMzNTc3MThDOgBEb2N1bWVudHM6AFBERkZpbGVzOgBidWlqc21hbmV0YWwxNGIucGRmAAAOACgAEwBiAHUAaQBqAHMAbQBhAG4AZQB0AGEAbAAxADQAYgAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAdFVzZXJzL2prbHltYWsvTGlicmFyeS9Nb2JpbGUgRG9jdW1lbnRzLzNMNjhLUUI0SEd+Y29tfnJlYWRkbGV+Q29tbW9uRG9jdW1lbnRzL0RvY3VtZW50cy9QREZGaWxlcy9idWlqc21hbmV0YWwxNGIucGRmABMAAS8AABUAAgAO//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4BAwEIARADRgNIA00DWANhA28DcwN6A4MDiAOVA5gDqgOtA7IAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAADtA==&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    MC&nbsp;Gregg and Jody&nbsp;M Klymak.
+Mode-2 hydraulic control of flow over a small ridge on a continental shelf.
+<em>J. Geophys. Res.</em>, 119(11):8093–8108, 2014.
+    [&nbsp;<a href="javascript:disp('@article{greggklymak14,\n    author = &amp;#34;Gregg, MC and Klymak, Jody M&amp;#34;,\n    date-added = &amp;#34;2015-01-28 16:39:03 +0000&amp;#34;,\n    date-modified = &amp;#34;2015-01-28 16:40:24 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Geophys. Res.&amp;#34;,\n    number = &amp;#34;11&amp;#34;,\n    pages = &amp;#34;8093--8108&amp;#34;,\n    publisher = &amp;#34;Wiley Online Library&amp;#34;,\n    title = &amp;#34;Mode-2 hydraulic control of flow over a small ridge on a continental shelf&amp;#34;,\n    volume = &amp;#34;119&amp;#34;,\n    year = &amp;#34;2014&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QJC4uLy4uLy4uL1BERkZpbGVzL2dyZWdnMjAxNG1vZGVhLnBkZtIXCxgZV05TLmRhdGFPEQGiAAAAAAGiAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADOl0lTSCsAAAB96kASZ3JlZ2cyMDE0bW9kZWEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAThK/dDuUOkAAAAAAAAAAAADAAIAAAkgAAAAAAAAAAAAAAAAAAAACFBERkZpbGVzABAACAAAzperwwAAABEACAAA0O7BaQAAAAEAEAB96kAACb+HAAkyNQACZI4AAgBCTWFjaW50b3NoIEhEOlVzZXJzOgBqa2x5bWFrOgBEcm9wYm94OgBQREZGaWxlczoAZ3JlZ2cyMDE0bW9kZWEucGRmAA4AJgASAGcAcgBlAGcAZwAyADAAMQA0AG0AbwBkAGUAYQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAMVVzZXJzL2prbHltYWsvRHJvcGJveC9QREZGaWxlcy9ncmVnZzIwMTRtb2RlYS5wZGYAABMAAS8AABUAAgAO//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4AtQC6AMICaAJqAm8CegKDApEClQKcAqUCqgK3AroCzALPAtQAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC1g==&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    M&nbsp;Sato, JM&nbsp;Klymak, E&nbsp;Kunze, R&nbsp;Dewey, and JF&nbsp;Dower.
+Turbulence and internal waves in <span class="bibtex-protected">Patricia</span> <span class="bibtex-protected">Bay</span>, <span class="bibtex-protected">Saanich</span> <span class="bibtex-protected">Inlet</span>, <span class="bibtex-protected">British</span> <span class="bibtex-protected">Columbia</span>.
+<em>Cont. Shelf Res.</em>, 85:153–167, 2014.
+<a href="https://doi.org/10.1016/j.csr.2014.06.009">doi:10.1016/j.csr.2014.06.009</a>.
+    [&nbsp;<a href="javascript:disp('@article{satoetal14,\n    author = &amp;#34;Sato, M and Klymak, JM and Kunze, E and Dewey, R and Dower, JF&amp;#34;,\n    date-added = &amp;#34;2014-08-25 17:42:01 +0000&amp;#34;,\n    date-modified = &amp;#34;2015-08-21 19:11:21 +0000&amp;#34;,\n    doi = &amp;#34;10.1016/j.csr.2014.06.009&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Cont. Shelf Res.&amp;#34;,\n    pages = &amp;#34;153--167&amp;#34;,\n    publisher = &amp;#34;Elsevier&amp;#34;,\n    title = &amp;#34;Turbulence and internal waves in {Patricia} {Bay}, {Saanich} {Inlet}, {British} {Columbia}&amp;#34;,\n    volume = &amp;#34;85&amp;#34;,\n    year = &amp;#34;2014&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QIS4uLy4uLy4uL1BERkZpbGVzL3NhdG9ldGFsMTRhLnBkZtIXCxgZV05TLmRhdGFPEQGWAAAAAAGWAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADOl0lTSCsAAAB96kAPc2F0b2V0YWwxNGEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAThM0NDuUxsAAAAAAAAAAAADAAIAAAkgAAAAAAAAAAAAAAAAAAAACFBERkZpbGVzABAACAAAzperwwAAABEACAAA0O7DmwAAAAEAEAB96kAACb+HAAkyNQACZI4AAgA/TWFjaW50b3NoIEhEOlVzZXJzOgBqa2x5bWFrOgBEcm9wYm94OgBQREZGaWxlczoAc2F0b2V0YWwxNGEucGRmAAAOACAADwBzAGEAdABvAGUAdABhAGwAMQA0AGEALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAC5Vc2Vycy9qa2x5bWFrL0Ryb3Bib3gvUERGRmlsZXMvc2F0b2V0YWwxNGEucGRmABMAAS8AABUAAgAO//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4AsgC3AL8CWQJbAmACawJ0AoIChgKNApYCmwKoAqsCvQLAAsUAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACxw==&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1016/j.csr.2014.06.009&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Andrey&nbsp;Y Shcherbina, Miles&nbsp;A Sundermeyer, Eric Kunze, Eric D'Asaro, Gualtiero Badin, Daniel Birch, Anne-Marie&nbsp;EG Brunner-Suzuki, J<span class="bibtex-protected">ö</span>rn Callies, Brandy&nbsp;T Kuebel&nbsp;Cervantes, Mariona Claret, and others.
+The latmix summer campaign: submesoscale stirring in the upper ocean.
+<em>Bulletin of the American Meteorological Society</em>, 2014.
+<a href="https://doi.org/10.1175/BAMS-D-14-00015.1">doi:10.1175/BAMS-D-14-00015.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{shcherbinaetal14,\n    author = {Shcherbina, Andrey Y and Sundermeyer, Miles A and Kunze, Eric and D&amp;#39;Asaro, Eric and Badin, Gualtiero and Birch, Daniel and Brunner-Suzuki, Anne-Marie EG and Callies, J{\&amp;#34;o}rn and Kuebel Cervantes, Brandy T and Claret, Mariona and others},\n    date-added = &amp;#34;2015-08-17 21:55:42 +0000&amp;#34;,\n    date-modified = &amp;#34;2015-08-17 22:01:50 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/BAMS-D-14-00015.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Bulletin of the American Meteorological Society&amp;#34;,\n    title = &amp;#34;The LatMix Summer Campaign: Submesoscale Stirring in the Upper Ocean.&amp;#34;,\n    year = &amp;#34;2014&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QJy4uLy4uLy4uL1BERkZpbGVzL3NoY2hlcmJpbmFldGFsMTRhLnBkZtIXCxgZV05TLmRhdGFPEQGuAAAAAAGuAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADOl0lTSCsAAAB96kAVc2hjaGVyYmluYWV0YWwxNGEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAby2htH3pl0AAAAAAAAAAAADAAIAAAkgAAAAAAAAAAAAAAAAAAAACFBERkZpbGVzABAACAAAzperwwAAABEACAAA0fgIzQAAAAEAEAB96kAACb+HAAkyNQACZI4AAgBFTWFjaW50b3NoIEhEOlVzZXJzOgBqa2x5bWFrOgBEcm9wYm94OgBQREZGaWxlczoAc2hjaGVyYmluYWV0YWwxNGEucGRmAAAOACwAFQBzAGgAYwBoAGUAcgBiAGkAbgBhAGUAdABhAGwAMQA0AGEALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASADRVc2Vycy9qa2x5bWFrL0Ryb3Bib3gvUERGRmlsZXMvc2hjaGVyYmluYWV0YWwxNGEucGRmABMAAS8AABUAAgAO//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4AuAC9AMUCdwJ5An4CiQKSAqACpAKrArQCuQLGAskC2wLeAuMAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC5Q==&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Samantha&nbsp;R Terker, James&nbsp;B Girton, Eric Kunze, Jody&nbsp;M Klymak, and Robert Pinkel.
+Observations of the internal tide on the california continental margin near monterey bay.
+<em>Cont. Shelf Res.</em>, 82:60–71, 2014.
+    [&nbsp;<a href="javascript:disp('@article{terkeretal14,\n    author = &amp;#34;Terker, Samantha R and Girton, James B and Kunze, Eric and Klymak, Jody M and Pinkel, Robert&amp;#34;,\n    date-added = &amp;#34;2014-08-25 17:43:42 +0000&amp;#34;,\n    date-modified = &amp;#34;2014-08-25 17:44:02 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Cont. Shelf Res.&amp;#34;,\n    pages = &amp;#34;60--71&amp;#34;,\n    publisher = &amp;#34;Elsevier&amp;#34;,\n    title = &amp;#34;Observations of the internal tide on the California continental margin near Monterey Bay&amp;#34;,\n    volume = &amp;#34;82&amp;#34;,\n    year = &amp;#34;2014&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QIy4uLy4uLy4uL1BERkZpbGVzL3RlcmtlcmV0YWwxNGEucGRm0hcLGBlXTlMuZGF0YU8RAZ4AAAAAAZ4AAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAM6XSVNIKwAAAH3qQBF0ZXJrZXJldGFsMTRhLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzEiE0CDEFwAAAAAAAAAAAAMAAgAACSAAAAAAAAAAAAAAAAAAAAAIUERGRmlsZXMAEAAIAADOl6vDAAAAEQAIAADQISaHAAAAAQAQAH3qQAAJv4cACTI1AAJkjgACAEFNYWNpbnRvc2ggSEQ6VXNlcnM6AGprbHltYWs6AERyb3Bib3g6AFBERkZpbGVzOgB0ZXJrZXJldGFsMTRhLnBkZgAADgAkABEAdABlAHIAawBlAHIAZQB0AGEAbAAxADQAYQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAMFVzZXJzL2prbHltYWsvRHJvcGJveC9QREZGaWxlcy90ZXJrZXJldGFsMTRhLnBkZgATAAEvAAAVAAIADv//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOALQAuQDBAmMCZQJqAnUCfgKMApAClwKgAqUCsgK1AscCygLPAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAtE=&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+
+    <h3> 2013 </h3>
+    <p>
+    MH&nbsp;Alford, James&nbsp;B Girton, Gunnar Voet, Glenn&nbsp;S Carter, John&nbsp;B Mickett, and Jody&nbsp;M Klymak.
+Turbulent mixing and hydraulic control of abyssal water in the <span class="bibtex-protected">Samoan</span> <span class="bibtex-protected">Passage</span>.
+<em>Geophys. Res. Lett.</em>, 2013.
+<a href="https://doi.org/10.1002/grl.50684">doi:10.1002/grl.50684</a>.
+    [&nbsp;<a href="javascript:disp('@article{alfordetal13,\n    author = &amp;#34;Alford, MH and Girton, James B and Voet, Gunnar and Carter, Glenn S and Mickett, John B and Klymak, Jody M&amp;#34;,\n    date-added = &amp;#34;2013-09-09 20:22:29 +0000&amp;#34;,\n    date-modified = &amp;#34;2013-09-09 20:25:18 +0000&amp;#34;,\n    doi = &amp;#34;10.1002/grl.50684&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Geophys. Res. Lett.&amp;#34;,\n    publisher = &amp;#34;Wiley Online Library&amp;#34;,\n    title = &amp;#34;Turbulent mixing and hydraulic control of abyssal water in the {Samoan} {Passage}&amp;#34;,\n    year = &amp;#34;2013&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1002/grl.50684&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    W&nbsp;Steven Holbrook, Ilker Fer, Raymond&nbsp;W Schmitt, Daniel Lizarralde, Jody&nbsp;M Klymak, L&nbsp;Cody Helfrich, and Robert Kubichek.
+Estimating oceanic turbulence dissipation from seismic images.
+<em>J. Atmos. Ocean. Tech.</em>, 2013.
+    [&nbsp;<a href="javascript:disp('@article{holbrooketal13,\n    author = &amp;#34;Holbrook, W Steven and Fer, Ilker and Schmitt, Raymond W and Lizarralde, Daniel and Klymak, Jody M and Helfrich, L Cody and Kubichek, Robert&amp;#34;,\n    date-added = &amp;#34;2014-01-25 21:42:34 +0000&amp;#34;,\n    date-modified = &amp;#34;2014-01-26 04:03:01 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Atmos. Ocean. Tech.&amp;#34;,\n    number = &amp;#34;8&amp;#34;,\n    title = &amp;#34;Estimating Oceanic Turbulence Dissipation from Seismic Images.&amp;#34;,\n    volume = &amp;#34;30&amp;#34;,\n    year = &amp;#34;2013&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Jody&nbsp;M. Klymak, Maarten Buijsman, Sonya&nbsp;M. Legg, and Robert Pinkel.
+Parameterizing baroclinic internal tide scattering and breaking on supercritical topography: the one- and two-ridge cases.
+<em>J. Phys. Oceanogr.</em>, 43:1380–1397, 2013.
+<a href="https://doi.org/http://dx.doi.org/10.1175/JPO-D-12-061.1">doi:http://dx.doi.org/10.1175/JPO-D-12-061.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{klymaketal13a,\n    author = &amp;#34;Klymak, Jody M. and Buijsman, Maarten and Legg, Sonya M. and Pinkel, Robert&amp;#34;,\n    date-added = &amp;#34;2014-01-25 21:40:43 +0000&amp;#34;,\n    date-modified = &amp;#34;2014-01-25 21:40:43 +0000&amp;#34;,\n    doi = &amp;#34;http://dx.doi.org/10.1175/JPO-D-12-061.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    pages = &amp;#34;1380--1397&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/IWISE/Baroclinic.pdf&amp;#34;,\n    title = &amp;#34;Parameterizing baroclinic internal tide scattering and breaking on supercritical topography: the one- and two-ridge cases&amp;#34;,\n    volume = &amp;#34;43&amp;#34;,\n    year = &amp;#34;2013&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QcS4uLy4uLy4uLy4uL0xpYnJhcnkvTW9iaWxlIERvY3VtZW50cy8zTDY4S1FCNEhHfmNvbX5yZWFkZGxlfkNvbW1vbkRvY3VtZW50cy9Eb2N1bWVudHMvUERGRmlsZXMva2x5bWFrZXRhbDEzYWEucGRm0hcLGBlXTlMuZGF0YU8RAi4AAAAAAi4AAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAANCJK8pIKwAAA1e8ZRJrbHltYWtldGFsMTNhYS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADV8271FHmJwAAAAAAAAAAAAQABgAACSAAAAAAAAAAAAAAAAAAAAAIUERGRmlsZXMAEAAIAADQiZxKAAAAEQAIAADUUlanAAAAAQAcA1e8ZQNXcY0DV3GMA1dVEQB8qEAAYhV7AAKT0wACAIBNYWNpbnRvc2ggSEQ6VXNlcnM6AGprbHltYWs6AExpYnJhcnk6AE1vYmlsZSBEb2N1bWVudHM6ADNMNjhLUUI0SEd+Y29tfnJlYWRkbGV+IzM1NzcxOEM6AERvY3VtZW50czoAUERGRmlsZXM6AGtseW1ha2V0YWwxM2FhLnBkZgAOACYAEgBrAGwAeQBtAGEAawBlAHQAYQBsADEAMwBhAGEALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAHNVc2Vycy9qa2x5bWFrL0xpYnJhcnkvTW9iaWxlIERvY3VtZW50cy8zTDY4S1FCNEhHfmNvbX5yZWFkZGxlfkNvbW1vbkRvY3VtZW50cy9Eb2N1bWVudHMvUERGRmlsZXMva2x5bWFrZXRhbDEzYWEucGRmAAATAAEvAAAVAAIADv//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOAQIBBwEPA0EDQwNIA1MDXANqA24DdQN+A4MDkAOTA6UDqAOtAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA68=&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/JPO-D-12-061.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/IWISE/Baroclinic.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    JA&nbsp;MacKinnon, Matthew&nbsp;H Alford, Oliver Sun, Rob Pinkel, Zhongxiang Zhao, and Jody Klymak.
+Parametric subharmonic instability of the internal tide at 29 <span class="bibtex-protected">N</span>.
+<em>J. Phys. Oceanogr.</em>, 43(1):17–28, 2013.
+<a href="https://doi.org/10.1175/JPO-D-11-0108.1">doi:10.1175/JPO-D-11-0108.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{mackinnonetal13b,\n    author = &amp;#34;MacKinnon, JA and Alford, Matthew H and Sun, Oliver and Pinkel, Rob and Zhao, Zhongxiang and Klymak, Jody&amp;#34;,\n    date-added = &amp;#34;2013-09-11 23:14:59 +0000&amp;#34;,\n    date-modified = &amp;#34;2013-09-11 23:50:05 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/JPO-D-11-0108.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    number = &amp;#34;1&amp;#34;,\n    pages = &amp;#34;17--28&amp;#34;,\n    title = &amp;#34;Parametric subharmonic instability of the internal tide at 29 {N}&amp;#34;,\n    volume = &amp;#34;43&amp;#34;,\n    year = &amp;#34;2013&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/JPO-D-11-0108.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    JA&nbsp;MacKinnon, MH&nbsp;Alford, Rob Pinkel, Jody Klymak, and Zhongxiang Zhao.
+The latitudinal dependence of shear and mixing in the <span class="bibtex-protected">Pacific</span> transiting the critical latitude for <span class="bibtex-protected">PSI</span>.
+<em>J. Phys. Oceanogr.</em>, 43(1):3–16, 2013.
+<a href="https://doi.org/10.1175/JPO-D-11-0107.1">doi:10.1175/JPO-D-11-0107.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{mackinnonetal13a,\n    author = &amp;#34;MacKinnon, JA and Alford, MH and Pinkel, Rob and Klymak, Jody and Zhao, Zhongxiang&amp;#34;,\n    date-added = &amp;#34;2013-09-11 23:12:31 +0000&amp;#34;,\n    date-modified = &amp;#34;2013-09-11 23:15:49 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/JPO-D-11-0107.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    number = &amp;#34;1&amp;#34;,\n    pages = &amp;#34;3--16&amp;#34;,\n    title = &amp;#34;The latitudinal dependence of shear and mixing in the {Pacific} transiting the critical latitude for {PSI}&amp;#34;,\n    volume = &amp;#34;43&amp;#34;,\n    year = &amp;#34;2013&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/JPO-D-11-0107.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Andrey&nbsp;Y Shcherbina, Eric&nbsp;A <span class="bibtex-protected">D'Asaro</span>, Craig&nbsp;M Lee, Jody&nbsp;M Klymak, M&nbsp;Jeroen Molemaker, and James&nbsp;C McWilliams.
+Statistics of vertical vorticity, divergence, and strain in a developed submesoscale turbulence field.
+<em>Geophys. Res. Lett.</em>, 40(17):4706–4711, 2013.
+<a href="https://doi.org/10.1002/grl.50919">doi:10.1002/grl.50919</a>.
+    [&nbsp;<a href="javascript:disp('@article{shcherbinaetal13,\n    author = &amp;#34;Shcherbina, Andrey Y and {D&amp;#39;Asaro}, Eric A and Lee, Craig M and Klymak, Jody M and Molemaker, M Jeroen and McWilliams, James C&amp;#34;,\n    date-added = &amp;#34;2014-01-25 21:42:34 +0000&amp;#34;,\n    date-modified = &amp;#34;2014-01-25 21:52:02 +0000&amp;#34;,\n    doi = &amp;#34;10.1002/grl.50919&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Geophys. Res. Lett.&amp;#34;,\n    number = &amp;#34;17&amp;#34;,\n    pages = &amp;#34;4706--4711&amp;#34;,\n    title = &amp;#34;Statistics of vertical vorticity, divergence, and strain in a developed submesoscale turbulence field&amp;#34;,\n    volume = &amp;#34;40&amp;#34;,\n    year = &amp;#34;2013&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1002/grl.50919&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+
+    <h3> 2012 </h3>
+    <p>
+    Matthew&nbsp;H. Alford, Meghan Cronin, and Jody&nbsp;M. Klymak.
+Annual cycle and depth penetration of wind-generated near-inertial internal waves at <span class="bibtex-protected">Ocean</span> <span class="bibtex-protected">Station</span> <span class="bibtex-protected">Papa</span> in the sub-<span class="bibtex-protected">Arctic</span> <span class="bibtex-protected">Pacific</span>.
+<em>J. Phys. Oceanogr</em>, 2012.
+<a href="https://doi.org/10.1175/JPO-D-11-092.1">doi:10.1175/JPO-D-11-092.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{alfordetal11b,\n    author = &amp;#34;Alford, Matthew H. and Cronin, Meghan and Klymak, Jody M.&amp;#34;,\n    date-added = &amp;#34;2011-05-22 16:53:05 -0700&amp;#34;,\n    date-modified = &amp;#34;2012-01-22 19:08:38 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/JPO-D-11-092.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr&amp;#34;,\n    title = &amp;#34;Annual cycle and depth penetration of wind-generated near-inertial internal waves at {Ocean} {Station} {Papa} in the sub-{Arctic} {Pacific}&amp;#34;,\n    year = &amp;#34;2012&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QJC4uLy4uLy4uL1BERkZpbGVzL2FsZm9yZGV0YWwxMWJhLnBkZtIXCxgZV05TLmRhdGFPEQGiAAAAAAGiAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADOl0lTSCsAAAB96kASYWxmb3JkZXRhbDExYmEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU8O0NEwWhsAAAAAAAAAAAADAAIAAAkgAAAAAAAAAAAAAAAAAAAACFBERkZpbGVzABAACAAAzperwwAAABEACAAA0TC8iwAAAAEAEAB96kAACb+HAAkyNQACZI4AAgBCTWFjaW50b3NoIEhEOlVzZXJzOgBqa2x5bWFrOgBEcm9wYm94OgBQREZGaWxlczoAYWxmb3JkZXRhbDExYmEucGRmAA4AJgASAGEAbABmAG8AcgBkAGUAdABhAGwAMQAxAGIAYQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAMVVzZXJzL2prbHltYWsvRHJvcGJveC9QREZGaWxlcy9hbGZvcmRldGFsMTFiYS5wZGYAABMAAS8AABUAAgAO//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4AtQC6AMICaAJqAm8CegKDApEClQKcAqUCqgK3AroCzALPAtQAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC1g==&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/JPO-D-11-092.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Maarten&nbsp;C. Buijsman, Sonya Legg, and Jody Klymak.
+Double-ridge internal tide interference and its effect on dissipation in luzon strait.
+<em>J. Phys. Oceanogr.</em>, 42(8):1337–1356, 2012.
+<a href="https://doi.org/10.1175/JPO-D-11-0210.1">doi:10.1175/JPO-D-11-0210.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{buijsmanetal12,\n    author = &amp;#34;Buijsman, Maarten C. and Legg, Sonya and Klymak, Jody&amp;#34;,\n    annote = &amp;#34;doi: 10.1175/JPO-D-11-0210.1&amp;#34;,\n    date = &amp;#34;2012/05/04&amp;#34;,\n    date-added = &amp;#34;2013-02-27 22:52:45 +0000&amp;#34;,\n    date-modified = &amp;#34;2013-04-16 20:31:24 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/JPO-D-11-0210.1&amp;#34;,\n    isbn = &amp;#34;0022-3670&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    journal1 = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    m3 = &amp;#34;doi: 10.1175/JPO-D-11-0210.1&amp;#34;,\n    number = &amp;#34;8&amp;#34;,\n    pages = &amp;#34;1337--1356&amp;#34;,\n    publisher = &amp;#34;American Meteorological Society&amp;#34;,\n    title = &amp;#34;Double-Ridge Internal Tide Interference and Its Effect on Dissipation in Luzon Strait&amp;#34;,\n    volume = &amp;#34;42&amp;#34;,\n    year = &amp;#34;2012&amp;#34;,\n    year1 = &amp;#34;2012&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/JPO-D-11-0210.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Jody&nbsp;M. Klymak, Maarten Buijsman, Sonya&nbsp;M. Legg, and Robert Pinkel.
+The direct breaking of internal waves at steep topography.
+<em>Oceanography</em>, 25(2):150&ndash;159, 2012.
+<a href="https://doi.org/10.5670/oceanog.2012.50">doi:10.5670/oceanog.2012.50</a>.
+    [&nbsp;<a href="javascript:disp('@article{klymaketal12b,\n    author = &amp;#34;Klymak, Jody M. and Buijsman, Maarten and Legg, Sonya M. and Pinkel, Robert&amp;#34;,\n    date-added = &amp;#34;2012-03-23 23:21:06 +0000&amp;#34;,\n    date-modified = &amp;#34;2013-04-16 20:50:29 +0000&amp;#34;,\n    doi = &amp;#34;10.5670/oceanog.2012.50&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Oceanography&amp;#34;,\n    number = &amp;#34;2&amp;#34;,\n    pages = &amp;#34;150-159&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/IWISE/DissipationAtSuperCritical.pdf&amp;#34;,\n    title = &amp;#34;The Direct Breaking of Internal Waves at Steep Topography&amp;#34;,\n    volume = &amp;#34;25&amp;#34;,\n    year = &amp;#34;2012&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QJC4uLy4uLy4uL1BERkZpbGVzL2tseW1ha2V0YWwxMmJhLnBkZtIXCxgZV05TLmRhdGFPEQGiAAAAAAGiAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADOl0lTSCsAAAB96kASa2x5bWFrZXRhbDEyYmEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4/Q8wErqcAAAAAAAAAAAADAAIAAAkgAAAAAAAAAAAAAAAAAAAACFBERkZpbGVzABAACAAAzperwwAAABEACAAAzAURFwAAAAEAEAB96kAACb+HAAkyNQACZI4AAgBCTWFjaW50b3NoIEhEOlVzZXJzOgBqa2x5bWFrOgBEcm9wYm94OgBQREZGaWxlczoAa2x5bWFrZXRhbDEyYmEucGRmAA4AJgASAGsAbAB5AG0AYQBrAGUAdABhAGwAMQAyAGIAYQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAMVVzZXJzL2prbHltYWsvRHJvcGJveC9QREZGaWxlcy9rbHltYWtldGFsMTJiYS5wZGYAABMAAS8AABUAAgAO//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4AtQC6AMICaAJqAm8CegKDApEClQKcAqUCqgK3AroCzALPAtQAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC1g==&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.5670/oceanog.2012.50&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/IWISE/DissipationAtSuperCritical.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    R.&nbsp;Pinkel, M.&nbsp;Buijsman, and J.M. Klymak.
+Breaking topographic lee waves in a tidal channel in <span class="bibtex-protected">Luzon</span> <span class="bibtex-protected">Strait</span>.
+<em>Oceanography</em>, 25(2):160, 2012.
+    [&nbsp;<a href="javascript:disp('@article{pinkel2012breaking,\n    author = &amp;#34;Pinkel, R. and Buijsman, M. and Klymak, J.M.&amp;#34;,\n    date-added = &amp;#34;2012-10-30 22:00:32 +0000&amp;#34;,\n    date-modified = &amp;#34;2012-10-30 22:01:52 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Oceanography&amp;#34;,\n    number = &amp;#34;2&amp;#34;,\n    pages = &amp;#34;160&amp;#34;,\n    title = &amp;#34;Breaking Topographic Lee Waves in a Tidal Channel in {Luzon} {Strait}&amp;#34;,\n    volume = &amp;#34;25&amp;#34;,\n    year = &amp;#34;2012&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Robert Pinkel, Luc Rainville, and Jody Klymak.
+Semidiurnal baroclinic wave momentum fluxes at <span class="bibtex-protected">Kaena</span> <span class="bibtex-protected">Ridge</span>, <span class="bibtex-protected">Hawaii</span>.
+<em>J. Phys. Oceanogr</em>, 42(8):1249–1269, 2012.
+<a href="https://doi.org/10.1175/JPO-D-11-0124.1">doi:10.1175/JPO-D-11-0124.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{pinkeletal12,\n    author = &amp;#34;Pinkel, Robert and Rainville, Luc and Klymak, Jody&amp;#34;,\n    annote = &amp;#34;doi: 10.1175/JPO-D-11-0124.1&amp;#34;,\n    date-added = &amp;#34;2012-10-30 21:58:47 +0000&amp;#34;,\n    date-modified = &amp;#34;2013-04-17 20:15:29 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/JPO-D-11-0124.1&amp;#34;,\n    isbn = &amp;#34;0022-3670&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr&amp;#34;,\n    journal1 = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    m3 = &amp;#34;doi: 10.1175/JPO-D-11-0124.1&amp;#34;,\n    number = &amp;#34;8&amp;#34;,\n    pages = &amp;#34;1249--1269&amp;#34;,\n    publisher = &amp;#34;American Meteorological Society&amp;#34;,\n    title = &amp;#34;Semidiurnal Baroclinic Wave Momentum Fluxes at {Kaena} {Ridge}, {Hawaii}&amp;#34;,\n    ty = &amp;#34;JOUR&amp;#34;,\n    volume = &amp;#34;42&amp;#34;,\n    year = &amp;#34;2012&amp;#34;,\n    year1 = &amp;#34;2012&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/JPO-D-11-0124.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+
+    <h3> 2011 </h3>
+    <p>
+    Matthew&nbsp;H. Alford, Jennifer&nbsp;A. <span class="bibtex-protected">MacKinnon</span>, Jonathan&nbsp;D. Nash, Harper Simmons, Andy Pickering, Jody&nbsp;M. Klymak, Robert Pinkel, Oliver Sun, Luc Rainville, Ruth Musgrave, Tamara Beitzel, <span class="bibtex-protected">Ke-Hsien</span> Fu, and <span class="bibtex-protected">Chung-Wei</span> Lu.
+Energy flux and dissipation in <span class="bibtex-protected">Luzon</span> <span class="bibtex-protected">Strait</span>: two tales of two ridges.
+<em>J. Phys. Oceanogr</em>, 41(11):2211&ndash;2222, 2011.
+<a href="https://doi.org/10.1175/JPO-D-11-073.1">doi:10.1175/JPO-D-11-073.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{alfordetal11a,\n    author = &amp;#34;Alford, Matthew H. and {MacKinnon}, Jennifer A. and Nash, Jonathan D. and Simmons, Harper and Pickering, Andy and Klymak, Jody M. and Pinkel, Robert and Sun, Oliver and Rainville, Luc and Musgrave, Ruth and Beitzel, Tamara and Fu, {Ke-Hsien} and Lu, {Chung-Wei}&amp;#34;,\n    date-added = &amp;#34;2011-05-22 16:49:50 -0700&amp;#34;,\n    date-modified = &amp;#34;2012-01-22 19:08:46 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/JPO-D-11-073.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr&amp;#34;,\n    number = &amp;#34;11&amp;#34;,\n    pages = &amp;#34;2211-2222&amp;#34;,\n    title = &amp;#34;Energy flux and dissipation in {Luzon} {Strait}: two tales of two ridges&amp;#34;,\n    volume = &amp;#34;41&amp;#34;,\n    year = &amp;#34;2011&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/JPO-D-11-073.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    W.&nbsp;Callendar, J.&nbsp;M. Klymak, and M.&nbsp;G.&nbsp;G. Foreman.
+Tidal generation of large sub-mesoscale eddy dipoles.
+<em>Ocean Science</em>, 7(4):487–502, 2011.
+<a href="https://doi.org/10.5194/os-7-487-2011">doi:10.5194/os-7-487-2011</a>.
+    [&nbsp;<a href="javascript:disp('@article{callendaretal11,\n    author = &amp;#34;Callendar, W. and Klymak, J. M. and Foreman, M. G. G.&amp;#34;,\n    date-added = &amp;#34;2011-08-03 05:52:36 -0700&amp;#34;,\n    date-modified = &amp;#34;2011-08-18 15:47:56 -0700&amp;#34;,\n    doi = &amp;#34;10.5194/os-7-487-2011&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Ocean Science&amp;#34;,\n    number = &amp;#34;4&amp;#34;,\n    pages = &amp;#34;487--502&amp;#34;,\n    pdf = &amp;#34;http://www.ocean-sci.net/7/487/2011/&amp;#34;,\n    title = &amp;#34;Tidal generation of large sub-mesoscale eddy dipoles&amp;#34;,\n    volume = &amp;#34;7&amp;#34;,\n    year = &amp;#34;2011&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://www.ocean-sci.net/7/487/2011/&amp;#34;,\n    bdsk-url-2 = &amp;#34;http://dx.doi.org/10.5194/os-7-487-2011&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://www.ocean-sci.net/7/487/2011/">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    J.M. Klymak, M.H. Alford, R.&nbsp;Pinkel, R.C. Lien, Y.J. Yang, and T.Y. Tang.
+The breaking and scattering of the internal tide on a continental slope.
+<em>J. Phys. Oceanogr</em>, 41:926–945, 2011.
+<a href="https://doi.org/10.1175/2010JPO4500.1">doi:10.1175/2010JPO4500.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{klymaketal11a,\n    author = &amp;#34;Klymak, J.M. and Alford, M.H. and Pinkel, R. and Lien, R.C. and Yang, Y.J. and Tang, T.Y.&amp;#34;,\n    date-added = &amp;#34;2011-08-02 10:06:17 -0700&amp;#34;,\n    date-modified = &amp;#34;2011-10-23 16:45:26 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/2010JPO4500.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr&amp;#34;,\n    pages = &amp;#34;926--945&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/PDFfiles/KlymakEtAl11.pdf&amp;#34;,\n    title = &amp;#34;The Breaking and Scattering of the Internal Tide on a Continental Slope&amp;#34;,\n    volume = &amp;#34;41&amp;#34;,\n    year = &amp;#34;2011&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QJC4uLy4uLy4uL1BERkZpbGVzL2tseW1ha2V0YWwxMWFhLnBkZtIXCxgZV05TLmRhdGFPEQGiAAAAAAGiAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADOl0lTSCsAAAB96kASa2x5bWFrZXRhbDExYWEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH5Rcs2TBuAAAAAAAAAAAAADAAIAAAkgAAAAAAAAAAAAAAAAAAAACFBERkZpbGVzABAACAAAzperwwAAABEACAAAzZNpUAAAAAEAEAB96kAACb+HAAkyNQACZI4AAgBCTWFjaW50b3NoIEhEOlVzZXJzOgBqa2x5bWFrOgBEcm9wYm94OgBQREZGaWxlczoAa2x5bWFrZXRhbDExYWEucGRmAA4AJgASAGsAbAB5AG0AYQBrAGUAdABhAGwAMQAxAGEAYQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAMVVzZXJzL2prbHltYWsvRHJvcGJveC9QREZGaWxlcy9rbHltYWtldGFsMTFhYS5wZGYAABMAAS8AABUAAgAO//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4AtQC6AMICaAJqAm8CegKDApEClQKcAqUCqgK3AroCzALPAtQAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC1g==&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/2010JPO4500.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/PDFfiles/KlymakEtAl11.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+
+    <h3> 2010 </h3>
+    <p>
+    M.H. Alford, <span class="bibtex-protected">R.-C.</span> Lien, H.&nbsp;Simmons, J.M. Klymak, S.&nbsp;Ramp, Y.&nbsp;Yang, D.&nbsp;Tang, and <span class="bibtex-protected">M.H.</span>-Chang.
+Speed and evolution of nonlinear internal waves transiting the <span class="bibtex-protected">South</span> <span class="bibtex-protected">China</span> <span class="bibtex-protected">Sea</span>.
+<em>J. Phys. Oceanogr.</em>, 40(6):1338&ndash;1355, 2010.
+<a href="https://doi.org/10.1175/2010JPO4388.1">doi:10.1175/2010JPO4388.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{alfordetal10,\n    author = &amp;#34;Alford, M.H. and Lien, {R.-C.} and Simmons, H. and Klymak, J.M. and Ramp, S. and Yang, Y. and Tang, D. and {M.H.}-Chang&amp;#34;,\n    date-added = &amp;#34;2010-01-11 17:22:19 -0800&amp;#34;,\n    date-modified = &amp;#34;2010-01-11 17:24:16 -0800&amp;#34;,\n    doi = &amp;#34;10.1175/2010JPO4388.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    number = &amp;#34;6&amp;#34;,\n    pages = &amp;#34;1338-1355&amp;#34;,\n    pdf = &amp;#34;http://ams.allenpress.com/archive/1520-0485/preprint/2010/pdf/10.1175\_2010JPO4388.1.pdf&amp;#34;,\n    title = &amp;#34;Speed and evolution of nonlinear internal waves transiting the {South} {China} {Sea}&amp;#34;,\n    volume = &amp;#34;40&amp;#34;,\n    year = &amp;#34;2010&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/2010JPO4388.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://ams.allenpress.com/archive/1520-0485/preprint/2010/pdf/10.1175_2010JPO4388.1.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    Jody&nbsp;M. Klymak, Sonya Legg, and Robert Pinkel.
+A simple parameterization of turbulent tidal mixing near supercritical topography.
+<em>J. Phys. Oceanogr.</em>, 40(9):2059&ndash;2074, 2010.
+<a href="https://arxiv.org/abs/http://journals.ametsoc.org/doi/pdf/10.1175/2010JPO4396.1">arXiv:http://journals.ametsoc.org/doi/pdf/10.1175/2010JPO4396.1</a>, <a href="https://doi.org/10.1175/2010JPO4396.1">doi:10.1175/2010JPO4396.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{klymaketal10b,\n    author = &amp;#34;Klymak, Jody M. and Legg, Sonya and Pinkel, Robert&amp;#34;,\n    doi = &amp;#34;10.1175/2010JPO4396.1&amp;#34;,\n    eprint = &amp;#34;http://journals.ametsoc.org/doi/pdf/10.1175/2010JPO4396.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    noprinturl = &amp;#34;http://journals.ametsoc.org/doi/abs/10.1175/2010JPO4396.1&amp;#34;,\n    number = &amp;#34;9&amp;#34;,\n    pages = &amp;#34;2059-2074&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/pdfs/DissipationSuperCritPP.pdf&amp;#34;,\n    title = &amp;#34;A Simple Parameterization of Turbulent Tidal Mixing near Supercritical Topography&amp;#34;,\n    volume = &amp;#34;40&amp;#34;,\n    year = &amp;#34;2010&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/2010JPO4396.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/pdfs/DissipationSuperCritPP.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    Jody&nbsp;M. Klymak, Sonya Legg, and Robert Pinkel.
+High-mode stationary waves in stratified flow over large obstacles.
+<em>J. Fluid Mech.</em>, 644:312–336, 2010.
+<a href="https://doi.org/10.1017/S0022112009992503">doi:10.1017/S0022112009992503</a>.
+    [&nbsp;<a href="javascript:disp('@article{klymaketal10a,\n    author = &amp;#34;Klymak, Jody M. and Legg, Sonya and Pinkel, Robert&amp;#34;,\n    date-modified = &amp;#34;2013-04-17 20:17:06 +0000&amp;#34;,\n    doi = &amp;#34;10.1017/S0022112009992503&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Fluid Mech.&amp;#34;,\n    pages = &amp;#34;312--336&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/pdfs/KlymakEtAl10.pdf&amp;#34;,\n    title = &amp;#34;High-mode stationary waves in stratified flow over large obstacles&amp;#34;,\n    volume = &amp;#34;644&amp;#34;,\n    year = &amp;#34;2010&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QJC4uLy4uLy4uL1BERkZpbGVzL2tseW1ha2V0YWwxMGFhLnBkZtIXCxgZV05TLmRhdGFPEQGiAAAAAAGiAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADOl0lTSCsAAAB96kASa2x5bWFrZXRhbDEwYWEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATfcftDr8jYAAAAAAAAAAAADAAIAAAkgAAAAAAAAAAAAAAAAAAAACFBERkZpbGVzABAACAAAzperwwAAABEACAAA0OxitgAAAAEAEAB96kAACb+HAAkyNQACZI4AAgBCTWFjaW50b3NoIEhEOlVzZXJzOgBqa2x5bWFrOgBEcm9wYm94OgBQREZGaWxlczoAa2x5bWFrZXRhbDEwYWEucGRmAA4AJgASAGsAbAB5AG0AYQBrAGUAdABhAGwAMQAwAGEAYQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAMVVzZXJzL2prbHltYWsvRHJvcGJveC9QREZGaWxlcy9rbHltYWtldGFsMTBhYS5wZGYAABMAAS8AABUAAgAO//8AAIAG0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhox0fIFZOU0RhdGFYTlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVkQXJjaGl2ZXLRJidUcm9vdIABAAgAEQAaACMALQAyADcAQABGAE0AVQBgAGcAagBsAG4AcQBzAHUAdwCEAI4AtQC6AMICaAJqAm8CegKDApEClQKcAqUCqgK3AroCzALPAtQAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC1g==&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/pdfs/KlymakEtAl10.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    Jody&nbsp;M. Klymak and Sonya&nbsp;M. Legg.
+A simple mixing scheme for models that resolve breaking internal waves.
+<em>Ocean Modell.</em>, 33(3-4):224 &ndash; 234, 2010.
+<a href="https://doi.org/10.1016/j.ocemod.2010.02.005">doi:10.1016/j.ocemod.2010.02.005</a>.
+    [&nbsp;<a href="javascript:disp('@article{klymaklegg10,\n    author = &amp;#34;Klymak, Jody M. and Legg, Sonya M.&amp;#34;,\n    date-modified = &amp;#34;2013-10-07 17:44:22 +0000&amp;#34;,\n    doi = &amp;#34;10.1016/j.ocemod.2010.02.005&amp;#34;,\n    issn = &amp;#34;1463-5003&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Ocean Modell.&amp;#34;,\n    keywords = &amp;#34;Parameterizations&amp;#34;,\n    nprinturl = &amp;#34;http://www.sciencedirect.com/science/article/B6VPS-4YH4R7H-1/2/aae09e4e83fe2175643b783e24418984&amp;#34;,\n    number = &amp;#34;3-4&amp;#34;,\n    pages = &amp;#34;224 - 234&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/pdfs/MixingScheme.pdf&amp;#34;,\n    title = &amp;#34;A simple mixing scheme for models that resolve breaking internal waves&amp;#34;,\n    volume = &amp;#34;33&amp;#34;,\n    year = &amp;#34;2010&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1016/j.ocemod.2010.02.005&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/pdfs/MixingScheme.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+
+    <h3> 2008 </h3>
+    <p>
+    Jody&nbsp;M. Klymak, Robert Pinkel, and Luc Rainville.
+Direct breaking of the internal tide near topography: <span class="bibtex-protected">Kaena</span> <span class="bibtex-protected">Ridge</span>, <span class="bibtex-protected">Hawaii</span>.
+<em>J. Phys. Oceanogr.</em>, 38:380–399, 2008.
+    [&nbsp;<a href="javascript:disp('@article{klymaketal08,\n    author = &amp;#34;Klymak, Jody M. and Pinkel, Robert and Rainville, Luc&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    pages = &amp;#34;380--399&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/Flip/KlymakEtAl07a.pdf&amp;#34;,\n    title = &amp;#34;Direct breaking of the internal tide near topography: {Kaena} {Ridge}, {Hawaii}&amp;#34;,\n    volume = &amp;#34;38&amp;#34;,\n    year = &amp;#34;2008&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/Flip/KlymakEtAl07a.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    Sonya Legg and Jody&nbsp;M. Klymak.
+Internal hydraulic jumps and overturning generated by tidal flow over a tall steep ridge.
+<em>J. Phys. Oceanogr.</em>, 38(9):1949–1964, 2008.
+<a href="https://doi.org/10.1175/2008JPO3777.1">doi:10.1175/2008JPO3777.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{leggklymak08,\n    author = &amp;#34;Legg, Sonya and Klymak, Jody M.&amp;#34;,\n    date-modified = &amp;#34;2016-03-14 17:36:33 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/2008JPO3777.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    number = &amp;#34;9&amp;#34;,\n    pages = &amp;#34;1949--1964&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/pdfs/LeggKlymak08.pdf&amp;#34;,\n    title = &amp;#34;Internal hydraulic jumps and overturning generated by tidal flow over a tall steep ridge&amp;#34;,\n    vol = &amp;#34;38&amp;#34;,\n    volume = &amp;#34;38&amp;#34;,\n    year = &amp;#34;2008&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/2008JPO3777.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/pdfs/LeggKlymak08.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    James&nbsp;N. Moum, Jonathan&nbsp;D. Nash, and Jody&nbsp;M. Klymak.
+Small scale processes in the coastal ocean.
+<em>Oceanography</em>, 2008.
+    [&nbsp;<a href="javascript:disp('@article{moumetal08,\n    author = &amp;#34;Moum, James N. and Nash, Jonathan D. and Klymak, Jody M.&amp;#34;,\n    date-modified = &amp;#34;2013-10-07 17:42:35 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Oceanography&amp;#34;,\n    number = &amp;#34;4&amp;#34;,\n    pdf = &amp;#34;http://mixing.coas.oregonstate.edu/papers/CoOP\_08.pdf&amp;#34;,\n    title = &amp;#34;Small Scale Processes in the Coastal Ocean&amp;#34;,\n    volume = &amp;#34;21&amp;#34;,\n    year = &amp;#34;2008&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://mixing.coas.oregonstate.edu/papers/CoOP_08.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+
+    <h3> 2007 </h3>
+    <p>
+    M.&nbsp;H. Alford, J.&nbsp;A. MacKinnon, Z.&nbsp;Zhao, R.&nbsp;Pinkel, J.&nbsp;Klymak, and T.&nbsp;Peacock.
+Internal waves across the <span class="bibtex-protected">Pacific</span>.
+<em>Geophys. Res. Lett.</em>, 2007.
+<a href="https://doi.org/doi:10.1029/2007GL031566">doi:doi:10.1029/2007GL031566</a>.
+    [&nbsp;<a href="javascript:disp('@article{alfordetal07,\n    author = &amp;#34;Alford, M. H. and MacKinnon, J. A. and Zhao, Z. and Pinkel, R. and Klymak, J. and Peacock, T.&amp;#34;,\n    doi = &amp;#34;doi:10.1029/2007GL031566&amp;#34;,\n    eid = &amp;#34;L24601&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Geophys. Res. Lett.&amp;#34;,\n    title = &amp;#34;Internal waves across the {Pacific}&amp;#34;,\n    volume = &amp;#34;34&amp;#34;,\n    year = &amp;#34;2007&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1029/2007GL031566&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Jody&nbsp;M. Klymak and James&nbsp;N. Moum.
+Oceanic isopycnal slope spectra. <span class="bibtex-protected">Part</span> <span class="bibtex-protected">II</span>: turbulence.
+<em>J. Phys. Oceanogr.</em>, 37(5):1232–1245, 2007.
+    [&nbsp;<a href="javascript:disp('@article{klymakmoum07b,\n    author = &amp;#34;Klymak, Jody M. and Moum, James N.&amp;#34;,\n    date-modified = &amp;#34;2013-10-07 17:43:47 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    number = &amp;#34;5&amp;#34;,\n    pages = &amp;#34;1232--1245&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/Home/HorizTurb.pdf&amp;#34;,\n    title = &amp;#34;Oceanic isopycnal slope spectra. {Part} {II}: Turbulence&amp;#34;,\n    volume = &amp;#34;37&amp;#34;,\n    year = &amp;#34;2007&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QOi4uLy4uLy4uLy4uLy5UcmFzaC9TcGFya2xlU2hhcmUvUERGRmlsZXMvS2x5bWFrTW91bTA3Yi5wZGbSFwsYGVdOUy5kYXRhTxEBugAAAAABugACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAxbMf+EgrAAADr1FPEUtseW1ha01vdW0wN2IucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGgGgXI5bSiAAAAAAAAAAAABAAEAAAJIAAAAAAAAAAAAAAAAAAAAAhQREZGaWxlcwAQAAgAAMWzkHgAAAARAAgAAMjmFxIAAAABABQDr1FPA69BzAOJqoQACpE/AAB9DQACAE5NYWNpbnRvc2ggSEQ6VXNlcnM6AGprbHltYWs6AC5UcmFzaDoAU3BhcmtsZVNoYXJlOgBQREZGaWxlczoAS2x5bWFrTW91bTA3Yi5wZGYADgAkABEASwBsAHkAbQBhAGsATQBvAHUAbQAwADcAYgAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAPFVzZXJzL2prbHltYWsvLlRyYXNoL1NwYXJrbGVTaGFyZS9QREZGaWxlcy9LbHltYWtNb3VtMDdiLnBkZgATAAEvAAAVAAIADv//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOAMsA0ADYApYCmAKdAqgCsQK/AsMCygLTAtgC5QLoAvoC/QMCAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAwQ=&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/Home/HorizTurb.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    Jody&nbsp;M. Klymak and James&nbsp;N. Moum.
+Oceanic isopycnal slope spectra. <span class="bibtex-protected">Part</span> <span class="bibtex-protected">I</span>: internal waves.
+<em>J. Phys. Oceanogr.</em>, 37(5):1215–1231, 2007.
+    [&nbsp;<a href="javascript:disp('@article{klymakmoum07a,\n    author = &amp;#34;Klymak, Jody M. and Moum, James N.&amp;#34;,\n    date-modified = &amp;#34;2013-10-07 17:43:59 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    number = &amp;#34;5&amp;#34;,\n    pages = &amp;#34;1215--1231&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/Home/HorizIw.pdf&amp;#34;,\n    title = &amp;#34;Oceanic isopycnal slope spectra. {Part} {I}: Internal waves&amp;#34;,\n    volume = &amp;#34;37&amp;#34;,\n    year = &amp;#34;2007&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QOi4uLy4uLy4uLy4uLy5UcmFzaC9TcGFya2xlU2hhcmUvUERGRmlsZXMvS2x5bWFrTW91bTA3YS5wZGbSFwsYGVdOUy5kYXRhTxEBugAAAAABugACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAxbMf+EgrAAADr1FPEUtseW1ha01vdW0wN2EucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIKYiHCfF7AUERGIAAAAAAABAAEAAAJIAAAAAAAAAAAAAAAAAAAAAhQREZGaWxlcwAQAAgAAMWzkHgAAAARAAgAAMJ8wTAAAAABABQDr1FPA69BzAOJqoQACpE/AAB9DQACAE5NYWNpbnRvc2ggSEQ6VXNlcnM6AGprbHltYWs6AC5UcmFzaDoAU3BhcmtsZVNoYXJlOgBQREZGaWxlczoAS2x5bWFrTW91bTA3YS5wZGYADgAkABEASwBsAHkAbQBhAGsATQBvAHUAbQAwADcAYQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAPFVzZXJzL2prbHltYWsvLlRyYXNoL1NwYXJrbGVTaGFyZS9QREZGaWxlcy9LbHltYWtNb3VtMDdhLnBkZgATAAEvAAAVAAIADv//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOAMsA0ADYApYCmAKdAqgCsQK/AsMCygLTAtgC5QLoAvoC/QMCAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAwQ=&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/Home/HorizIw.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    James&nbsp;N. Moum, Jody&nbsp;M. Klymak, Jonathan&nbsp;D. Nash, Alexander Perlin, and William&nbsp;D. Smyth.
+Energy transport by nonlinear internal waves.
+<em>J. Phys. Oceanogr.</em>, 37:1968–1988, 2007.
+    [&nbsp;<a href="javascript:disp('@article{moumetal07,\n    author = &amp;#34;Moum, James N. and Klymak, Jody M. and Nash, Jonathan D. and Perlin, Alexander and Smyth, William D.&amp;#34;,\n    date-modified = &amp;#34;2013-10-07 17:42:54 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    pages = &amp;#34;1968--1988&amp;#34;,\n    pdf = &amp;#34;http://mixing.coas.oregonstate.edu/papers/NLIW\_energy\_flux.pdf&amp;#34;,\n    title = &amp;#34;Energy transport by nonlinear internal waves&amp;#34;,\n    volume = &amp;#34;37&amp;#34;,\n    year = &amp;#34;2007&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://mixing.coas.oregonstate.edu/papers/NLIW_energy_flux.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    A.&nbsp;Perlin, J.N. Moum, J.M. Klymak, M.D. Levine, T.&nbsp;Boyd, and M.&nbsp;Kosro.
+Organization of stratification, turbulence, and veering in bottom <span class="bibtex-protected">Ekman</span> layers.
+<em>J. Geophys. Res.</em>, 112:doi:10.1029/2004JC002641, 2007.
+    [&nbsp;<a href="javascript:disp('@article{perlinetal07,\n    author = &amp;#34;Perlin, A. and Moum, J.N. and Klymak, J.M. and Levine, M.D. and Boyd, T. and Kosro, M.&amp;#34;,\n    date-modified = &amp;#34;2013-10-07 17:39:33 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Geophys. Res.&amp;#34;,\n    pages = &amp;#34;doi:10.1029/2004JC002641&amp;#34;,\n    pdf = &amp;#34;http://mixing.coas.oregonstate.edu/papers/ekman\_layer.pdf&amp;#34;,\n    title = &amp;#34;Organization of stratification, turbulence, and veering in bottom {Ekman} layers&amp;#34;,\n    volume = &amp;#34;112&amp;#34;,\n    year = &amp;#34;2007&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://mixing.coas.oregonstate.edu/papers/ekman_layer.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+
+    <h3> 2006 </h3>
+    <p>
+    Jody&nbsp;M. Klymak, James&nbsp;N. Moum, Jonathan&nbsp;D. Nash, Eric Kunze, James&nbsp;B. Girton, Glenn&nbsp;S. Carter, Craig&nbsp;M. Lee, Thomas&nbsp;B. Sanford, and Micahel&nbsp;C. Gregg.
+An estimate of tidal energy lost to turbulence at the <span class="bibtex-protected">Hawaiian</span> <span class="bibtex-protected">Ridge</span>.
+<em>J. Phys. Oceanogr.</em>, 36:1148–1164, 2006.
+<a href="https://doi.org/10.1175/JPO2885.1">doi:10.1175/JPO2885.1</a>.
+    [&nbsp;<a href="javascript:disp('@article{klymaketal06b,\n    author = &amp;#34;Klymak, Jody M. and Moum, James N. and Nash, Jonathan D. and Kunze, Eric and Girton, James B. and Carter, Glenn S. and Lee, Craig M. and Sanford, Thomas B. and Gregg, Micahel C.&amp;#34;,\n    date-modified = &amp;#34;2016-03-14 17:37:05 +0000&amp;#34;,\n    doi = &amp;#34;10.1175/JPO2885.1&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    pages = &amp;#34;1148--1164&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/Home/KlymakEtAl05pp.pdf&amp;#34;,\n    title = &amp;#34;An estimate of tidal energy lost to turbulence at the {Hawaiian} {Ridge}&amp;#34;,\n    volume = &amp;#34;36&amp;#34;,\n    year = &amp;#34;2006&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1175/JPO2885.1&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/Home/KlymakEtAl05pp.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    Jody&nbsp;M. Klymak, Robert Pinkel, Cho-Teng Liu, Anthony&nbsp;K. Liu, and Laura David.
+Prototypical solitons in the <span class="bibtex-protected">South</span> <span class="bibtex-protected">China</span> <span class="bibtex-protected">Sea</span>.
+<em>Geophys. Res. Lett.</em>, 33:doi:10.1029/2006GL025932, 2006.
+    [&nbsp;<a href="javascript:disp('@article{klymaketal06a,\n    author = &amp;#34;Klymak, Jody M. and Pinkel, Robert and Liu, Cho-Teng and Liu, Anthony K. and David, Laura&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Geophys. Res. Lett.&amp;#34;,\n    pages = &amp;#34;doi:10.1029/2006GL025932&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/pdfs/KlymakEtAl06a.pdf&amp;#34;,\n    title = &amp;#34;Prototypical solitons in the {South} {China} {Sea}&amp;#34;,\n    volume = &amp;#34;33&amp;#34;,\n    year = &amp;#34;2006&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/pdfs/KlymakEtAl06a.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    <span class="bibtex-protected">C.-T.</span> Liu, R.&nbsp;Pinkel, <span class="bibtex-protected">M.-K.</span> Hsu, J.M. Klymak, <span class="bibtex-protected">H.-W.</span> Chen, and C.&nbsp;Villanovy.
+Non-linear internal waves from <span class="bibtex-protected">Luzon</span> <span class="bibtex-protected">Strait</span>.
+<em>Eos Trans. AGU</em>, 87(42):449–451, 2006.
+<a href="https://doi.org/10.1029/2006EO420002">doi:10.1029/2006EO420002</a>.
+    [&nbsp;<a href="javascript:disp('@article{liuetal06,\n    author = &amp;#34;Liu, {C.-T.} and Pinkel, R. and Hsu, {M.-K.} and Klymak, J.M. and Chen, {H.-W.} and Villanovy, C.&amp;#34;,\n    date-modified = &amp;#34;2013-10-07 17:43:25 +0000&amp;#34;,\n    doi = &amp;#34;10.1029/2006EO420002&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Eos Trans.\ AGU&amp;#34;,\n    number = &amp;#34;42&amp;#34;,\n    pages = &amp;#34;449--451&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/pdfs/LiuEtAl06.pdf&amp;#34;,\n    title = &amp;#34;Non-linear Internal Waves from {Luzon} {Strait}&amp;#34;,\n    volume = &amp;#34;87&amp;#34;,\n    year = &amp;#34;2006&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://dx.doi.org/10.1029/2006EO420002&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/pdfs/LiuEtAl06.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+
+    <h3> 2005 </h3>
+    <p>
+    A.&nbsp;Perlin, J.N. Moum, and J.M. Klymak.
+Response of the bottom boundary layer over a sloping shelf to variations in along-shore wind.
+<em>J. Geophys. Res.</em>, 110(C10S09):doi:10.1029/2004JC002500, 2005.
+    [&nbsp;<a href="javascript:disp('@article{perlinetal05b,\n    author = &amp;#34;Perlin, A. and Moum, J.N. and Klymak, J.M.&amp;#34;,\n    date-modified = &amp;#34;2013-10-07 17:39:06 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Geophys. Res.&amp;#34;,\n    number = &amp;#34;C10S09&amp;#34;,\n    pages = &amp;#34;doi:10.1029/2004JC002500&amp;#34;,\n    pdf = &amp;#34;http://mixing.coas.oregonstate.edu/papers/upwell\_v19\_2col.pdf&amp;#34;,\n    title = &amp;#34;Response of the bottom boundary layer over a sloping shelf to variations in along-shore wind&amp;#34;,\n    volume = &amp;#34;110&amp;#34;,\n    year = &amp;#34;2005&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://mixing.coas.oregonstate.edu/papers/upwell_v19_2col.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    A.&nbsp;Perlin, J.N. Moum, J.M. Klymak, M.D. Levine, T.&nbsp;Boyd, and M.&nbsp;Kosro.
+A modified law-of-the-wall applied to oceanic bottom boundary layers.
+<em>J. Geophys. Res.</em>, 110(C10S10):doi:10.1029/2004JC002310, 2005.
+    [&nbsp;<a href="javascript:disp('@article{perlinetal05a,\n    author = &amp;#34;Perlin, A. and Moum, J.N. and Klymak, J.M. and Levine, M.D. and Boyd, T. and Kosro, M.&amp;#34;,\n    date-modified = &amp;#34;2013-10-07 17:39:19 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Geophys. Res.&amp;#34;,\n    number = &amp;#34;C10S10&amp;#34;,\n    pages = &amp;#34;doi:10.1029/2004JC002310&amp;#34;,\n    pdf = &amp;#34;http://mixing.coas.oregonstate.edu/papers/MLW.pdf&amp;#34;,\n    read = &amp;#34;1&amp;#34;,\n    title = &amp;#34;A modified law-of-the-wall applied to oceanic bottom boundary layers&amp;#34;,\n    volume = &amp;#34;110&amp;#34;,\n    year = &amp;#34;2005&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QOi4uLy4uLy4uLy4uLy5UcmFzaC9TcGFya2xlU2hhcmUvUERGRmlsZXMvUGVybGluRXRBbDA1Yi5wZGbSFwsYGVdOUy5kYXRhTxEBugAAAAABugACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAxbMf+EgrAAADr1FPEVBlcmxpbkV0QWwwNWIucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALcfyvK0g5JAAAAAAAAAAAABAAEAAAJIAAAAAAAAAAAAAAAAAAAAAhQREZGaWxlcwAQAAgAAMWzkHgAAAARAAgAAMrScLkAAAABABQDr1FPA69BzAOJqoQACpE/AAB9DQACAE5NYWNpbnRvc2ggSEQ6VXNlcnM6AGprbHltYWs6AC5UcmFzaDoAU3BhcmtsZVNoYXJlOgBQREZGaWxlczoAUGVybGluRXRBbDA1Yi5wZGYADgAkABEAUABlAHIAbABpAG4ARQB0AEEAbAAwADUAYgAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAPFVzZXJzL2prbHltYWsvLlRyYXNoL1NwYXJrbGVTaGFyZS9QREZGaWxlcy9QZXJsaW5FdEFsMDViLnBkZgATAAEvAAAVAAIADv//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOAMsA0ADYApYCmAKdAqgCsQK/AsMCygLTAtgC5QLoAvoC/QMCAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAwQ=&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://mixing.coas.oregonstate.edu/papers/MLW.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+
+    <h3> 2004 </h3>
+    <p>
+    Jody&nbsp;M. Klymak and Michael&nbsp;C. Gregg.
+Tidally generated turbulence over the <span class="bibtex-protected">K</span>night <span class="bibtex-protected">I</span>nlet sill.
+<em>J. Phys. Oceanogr.</em>, 34(5):1135–1151, 2004.
+    [&nbsp;<a href="javascript:disp('@article{klymakgregg04,\n    author = &amp;#34;Klymak, Jody M. and Gregg, Michael C.&amp;#34;,\n    date-modified = &amp;#34;2013-10-07 17:44:37 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    number = &amp;#34;5&amp;#34;,\n    pages = &amp;#34;1135--1151&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/KnightInlet/KlymakGregg04.pdf&amp;#34;,\n    title = &amp;#34;Tidally generated turbulence over the {K}night {I}nlet sill&amp;#34;,\n    volume = &amp;#34;34&amp;#34;,\n    year = &amp;#34;2004&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/KnightInlet/KlymakGregg04.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    J.&nbsp;N. Moum, A.&nbsp;Perlin, J.M. Klymak, M.D. Levine, T.&nbsp;Boyd, and M.&nbsp;Kosro.
+Convectively-driven mixing in the bottom boundary layer.
+<em>J. Phys. Oceanogr.</em>, 34:2189–2202, 2004.
+    [&nbsp;<a href="javascript:disp('@article{moumetal04,\n    author = &amp;#34;Moum, J. N. and Perlin, A. and Klymak, J.M. and Levine, M.D. and Boyd, T. and Kosro, M.&amp;#34;,\n    date-modified = &amp;#34;2013-10-07 17:43:05 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    pages = &amp;#34;2189--2202&amp;#34;,\n    pdf = &amp;#34;http://roach.coas.oregonstate.edu/papers/energy\_v4\_1space.pdf&amp;#34;,\n    title = &amp;#34;Convectively-driven mixing in the bottom boundary layer&amp;#34;,\n    volume = &amp;#34;34&amp;#34;,\n    year = &amp;#34;2004&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://roach.coas.oregonstate.edu/papers/energy_v4_1space.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+
+    <h3> 2003 </h3>
+    <p>
+    Kathleen&nbsp;A. Edwards, Parker MacCready, James&nbsp;N. Moum, Geno Pawlak, Jody&nbsp;M. Klymak, and Alexander Perlin.
+Form drag and mixing due to tidal flow past a sharp point.
+<em>J. Phys. Oceanogr.</em>, 34:1297–1312, 2003.
+    [&nbsp;<a href="javascript:disp('@article{edwardsetal03,\n    author = &amp;#34;Edwards, Kathleen A. and MacCready, Parker and Moum, James N. and Pawlak, Geno and Klymak, Jody M. and Perlin, Alexander&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    pages = &amp;#34;1297--1312&amp;#34;,\n    title = &amp;#34;Form Drag and Mixing due to Tidal Flow past a Sharp Point&amp;#34;,\n    volume = &amp;#34;34&amp;#34;,\n    year = &amp;#34;2003&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+    <p>
+    Jody&nbsp;M. Klymak and Michael&nbsp;C. Gregg.
+The role of upstream waves and a downstream density-pool in the growth of lee-waves: stratified flow over the <span class="bibtex-protected">K</span>night <span class="bibtex-protected">I</span>nlet sill.
+<em>J. Phys. Oceanogr.</em>, 33(7):1446–1461, 2003.
+    [&nbsp;<a href="javascript:disp('@article{klymakgregg03,\n    author = &amp;#34;Klymak, Jody M. and Gregg, Michael C.&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Phys. Oceanogr.&amp;#34;,\n    number = &amp;#34;7&amp;#34;,\n    pages = &amp;#34;1446--1461&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/KnightInlet/paper3JPO.pdf&amp;#34;,\n    title = &amp;#34;The role of upstream waves and a downstream density-pool in the growth of lee-waves: stratified flow over the {K}night {I}nlet sill&amp;#34;,\n    volume = &amp;#34;33&amp;#34;,\n    year = &amp;#34;2003&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/KnightInlet/paper3JPO.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    Jody&nbsp;M. Klymak and James&nbsp;N. Moum.
+Internal solitary waves of elevation advancing on a shoaling shelf.
+<em>Geophys. Res. Lett.</em>, 30(20):10.1029/2003GL017706, 2003.
+    [&nbsp;<a href="javascript:disp('@article{klymakmoum03,\n    author = &amp;#34;Klymak, Jody M. and Moum, James N.&amp;#34;,\n    date-modified = &amp;#34;2013-10-07 17:44:12 +0000&amp;#34;,\n    eid = &amp;#34;2045&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Geophys. Res. Lett.&amp;#34;,\n    number = &amp;#34;20&amp;#34;,\n    pages = &amp;#34;10.1029/2003GL017706&amp;#34;,\n    pdf = &amp;#34;http://mixing.coas.oregonstate.edu/people/jklymak2/coast/2003GL017706final.pdf&amp;#34;,\n    title = &amp;#34;Internal Solitary Waves of Elevation Advancing on a Shoaling Shelf&amp;#34;,\n    volume = &amp;#34;30&amp;#34;,\n    year = &amp;#34;2003&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QOS4uLy4uLy4uLy4uLy5UcmFzaC9TcGFya2xlU2hhcmUvUERGRmlsZXMvS2x5bWFrTW91bTAzLnBkZtIXCxgZV05TLmRhdGFPEQG4AAAAAAG4AAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADFsx/4SCsAAAOvUU8QS2x5bWFrTW91bTAzLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8pj8QJJm4AAAAAAAAAAAAEAAQAAAkgAAAAAAAAAAAAAAAAAAAACFBERkZpbGVzABAACAAAxbOQeAAAABEACAAAxAmI3gAAAAEAFAOvUU8Dr0HMA4mqhAAKkT8AAH0NAAIATU1hY2ludG9zaCBIRDpVc2VyczoAamtseW1hazoALlRyYXNoOgBTcGFya2xlU2hhcmU6AFBERkZpbGVzOgBLbHltYWtNb3VtMDMucGRmAAAOACIAEABLAGwAeQBtAGEAawBNAG8AdQBtADAAMwAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAO1VzZXJzL2prbHltYWsvLlRyYXNoL1NwYXJrbGVTaGFyZS9QREZGaWxlcy9LbHltYWtNb3VtMDMucGRmAAATAAEvAAAVAAIADv//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOAMoAzwDXApMClQKaAqUCrgK8AsACxwLQAtUC4gLlAvcC+gL/AAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAwE=&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://mixing.coas.oregonstate.edu/people/jklymak2/coast/2003GL017706final.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <p>
+    Daniel&nbsp;L. Rudnick, Timothy&nbsp;J. Boyd, Russell&nbsp;E. Brainard, Glenn&nbsp;S. Carter, Gary&nbsp;D. Egbert, Michael&nbsp;C. Gregg, Peter&nbsp;E. Holloway, Jody&nbsp;M. Klymak, Eric Kunze, Craig&nbsp;M. Lee, Murray&nbsp;D. Levine, Douglas&nbsp;S. Luther, Joseph&nbsp;P. Martin, Mark&nbsp;A. Merrifield, James&nbsp;N. Moum, Jonathan&nbsp;D. Nash, Robert Pinkel, Luc Rainville, and Thomas&nbsp;B. Sanford.
+From tides to mixing along the <span class="bibtex-protected">Hawaiian Ridge</span>.
+<em>Science</em>, 301(5631):355–357, 2003.
+    [&nbsp;<a href="javascript:disp('@article{rudnicketal03,\n    author = &amp;#34;Rudnick, Daniel L. and Boyd, Timothy J. and Brainard, Russell E. and Carter, Glenn S. and Egbert, Gary D. and Gregg, Michael C. and Holloway, Peter E. and Klymak, Jody M. and Kunze, Eric and Lee, Craig M. and Levine, Murray D. and Luther, Douglas S. and Martin, Joseph P. and Merrifield, Mark A. and Moum, James N. and Nash, Jonathan D. and Pinkel, Robert and Rainville, Luc and Sanford, Thomas B.&amp;#34;,\n    abstract = &amp;#34;The cascade from tides to turbulence has been hypothesized to serve as a major energy pathway for ocean mixing. We investigated this cascade along the Hawaiian Ridge using observations and numerical models. A divergence of internal tidal energy flux observed at the ridge agrees with the predictions of internal tide models. Large internal tidal waves with peak-to-peak amplitudes of up to 300 meters occur on the ridge. Internal-wave energy is enhanced, and turbulent dissipation in the region near the ridge is 10 times larger than open-ocean values. Given these major elements in the tides-to-turbulence cascade, an energy budget approaches closure.&amp;#34;,\n    date-modified = &amp;#34;2017-04-28 22:32:14 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;Science&amp;#34;,\n    number = &amp;#34;5631&amp;#34;,\n    pages = &amp;#34;355--357&amp;#34;,\n    pdf = &amp;#34;http://www.sciencemag.org/cgi/reprint/301/5631/355.pdf&amp;#34;,\n    title = &amp;#34;From Tides to Mixing Along the {Hawaiian Ridge}&amp;#34;,\n    volume = &amp;#34;301&amp;#34;,\n    year = &amp;#34;2003&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://www.sciencemag.org/cgi/reprint/301/5631/355.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+
+    <h3> 2001 </h3>
+    <p>
+    Jody&nbsp;M. Klymak and Michael&nbsp;C. Gregg.
+The three-dimensional nature of flow near a sill.
+<em>J. Geophys. Res.</em>, 106(C10):22,295&ndash;22,311, 2001.
+    [&nbsp;<a href="javascript:disp('@article{klymakgregg01,\n    author = &amp;#34;Klymak, Jody M. and Gregg, Michael C.&amp;#34;,\n    date-modified = &amp;#34;2013-02-19 23:36:38 +0000&amp;#34;,\n    jmkpubtype = &amp;#34;refereed&amp;#34;,\n    journal = &amp;#34;J. Geophys. Res.&amp;#34;,\n    keywords = &amp;#34;internal waves&amp;#34;,\n    number = &amp;#34;C10&amp;#34;,\n    pages = &amp;#34;22,295--22,311&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/KnightInlet/KlymakGregg01\_jgr.pdf&amp;#34;,\n    title = &amp;#34;The Three-dimensional Nature of Flow near a Sill&amp;#34;,\n    volume = &amp;#34;106&amp;#34;,\n    year = &amp;#34;2001&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/KnightInlet/KlymakGregg01_jgr.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <h2> other </h2>
+
+    <h3> 2011 </h3>
+    <p>
+    Blair Greenan and Jody&nbsp;M. Klymak.
+Physical oceanography in <span class="bibtex-protected">Canada</span>, 2007-2010: a review for the <span class="bibtex-protected">International</span> <span class="bibtex-protected">A</span>ssociation for the <span class="bibtex-protected">P</span>hysical <span class="bibtex-protected">S</span>ciences of the <span class="bibtex-protected">O</span>ceans.
+Technical Report, University of Victoria, 2011.
+    [&nbsp;<a href="javascript:disp('@techreport{Greenklymak11,\n    author = &amp;#34;Greenan, Blair and Klymak, Jody M.&amp;#34;,\n    date-added = &amp;#34;2013-06-01 21:02:46 +0000&amp;#34;,\n    date-modified = &amp;#34;2017-04-28 21:52:15 +0000&amp;#34;,\n    institution = &amp;#34;University of Victoria&amp;#34;,\n    jmkpubtype = &amp;#34;other&amp;#34;,\n    title = &amp;#34;Physical Oceanography in {Canada}, 2007-2010: A Review for the {International} {A}ssociation for the {P}hysical {S}ciences of the {O}ceans&amp;#34;,\n    year = &amp;#34;2011&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QIC4uLy4uLy4uL1BERkZpbGVzL0dyZWVuS2x5bWFrMTFh0hcLGBlXTlMuZGF0YU8RAZIAAAAAAZIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAM6XSVNIKwAAAH3qQA5HcmVlbktseW1hazExYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfj5Pzc+wSQAAAAAAAAAAAAMAAgAACSAAAAAAAAAAAAAAAAAAAAAIUERGRmlsZXMAEAAIAADOl6vDAAAAEQAIAADN0BK5AAAAAQAQAH3qQAAJv4cACTI1AAJkjgACAD5NYWNpbnRvc2ggSEQ6VXNlcnM6AGprbHltYWs6AERyb3Bib3g6AFBERkZpbGVzOgBHcmVlbktseW1hazExYQAOAB4ADgBHAHIAZQBlAG4ASwBsAHkAbQBhAGsAMQAxAGEADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAtVXNlcnMvamtseW1hay9Ecm9wYm94L1BERkZpbGVzL0dyZWVuS2x5bWFrMTFhAAATAAEvAAAVAAIADv//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOALEAtgC+AlQCVgJbAmYCbwJ9AoECiAKRApYCowKmArgCuwLAAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAsI=&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    
+    
+    
+    </p>
+
+    <h3> 2008 </h3>
+    <p>
+    M.&nbsp;Alford and J.&nbsp;Klymak.
+<span class="bibtex-protected">Assessing the State of the Art of Ocean Internal Wave Research</span>.
+<em>Eos Trans. AGU</em>, 89:52, 2008.
+    [&nbsp;<a href="javascript:disp('@article{alfordklymak08,\n    author = &amp;#34;Alford, M. and Klymak, J.&amp;#34;,\n    date-added = &amp;#34;2010-03-05 15:07:48 -0800&amp;#34;,\n    date-modified = &amp;#34;2010-03-05 15:16:11 -0800&amp;#34;,\n    jmkpubtype = &amp;#34;other&amp;#34;,\n    journal = &amp;#34;Eos Trans. AGU&amp;#34;,\n    pages = &amp;#34;52&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/pdfs/AlfordKlymak08.pdf&amp;#34;,\n    title = &amp;#34;{Assessing the State of the Art of Ocean Internal Wave Research}&amp;#34;,\n    volume = &amp;#34;89&amp;#34;,\n    year = &amp;#34;2008&amp;#34;,\n    bdsk-file-1 = &amp;#34;YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QKS4uLy4uLy4uLy4uL1NpdGVzL3BkZnMvQWxmb3JkS2x5bWFrMDgucGRm0hcLGBlXTlMuZGF0YU8RAZIAAAAAAZIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAM6XSVNIKwAAACCfMRJBbGZvcmRLbHltYWswOC5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIJ80x7bQfgAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAEcGRmcwAQAAgAAM6Xq8MAAAARAAgAAMe3QP4AAAABABAAIJ8xAB+RNwAJMjUAAmSOAAIAPE1hY2ludG9zaCBIRDpVc2VyczoAamtseW1hazoAU2l0ZXM6AHBkZnM6AEFsZm9yZEtseW1hazA4LnBkZgAOACYAEgBBAGwAZgBvAHIAZABLAGwAeQBtAGEAawAwADgALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASACtVc2Vycy9qa2x5bWFrL1NpdGVzL3BkZnMvQWxmb3JkS2x5bWFrMDgucGRmAAATAAEvAAAVAAIADv//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOALoAvwDHAl0CXwJkAm8CeAKGAooCkQKaAp8CrAKvAsECxALJAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAss=&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/pdfs/AlfordKlymak08.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+
+    <h3> 2000 </h3>
+    <p>
+    Jody&nbsp;M. Klymak and Michael&nbsp;C. Gregg.
+Stratified flow separation in the lee of the <span class="bibtex-protected">Knight</span> <span class="bibtex-protected">Inlet</span> sill.
+In <em>Proceedings of the IAHR 5th International Symposium on Stratified Flows</em>. 2000.
+    [&nbsp;<a href="javascript:disp('@inproceedings{klymakgregg00,\n    author = &amp;#34;Klymak, Jody M. and Gregg, Michael C.&amp;#34;,\n    booktitle = &amp;#34;Proceedings of the IAHR 5th International Symposium on Stratified Flows&amp;#34;,\n    jmkpubtype = &amp;#34;other&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/KnightInlet/KlymakGregg00.pdf&amp;#34;,\n    title = &amp;#34;Stratified Flow Separation in the Lee of the {Knight} {Inlet} Sill&amp;#34;,\n    year = &amp;#34;2000&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/KnightInlet/KlymakGregg00.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+    <h2> inbook </h2>
+
+    <h3> 2009 </h3>
+    <p>
+    Jody&nbsp;M. Klymak and Jonathan&nbsp;D. Nash.
+Estimates of mixing.
+In John&nbsp;H. Steele, Karl&nbsp;K. Turekian, and Steve&nbsp;A. Thorpe, editors, <em>Encyclopedia of Ocean Sciences</em>, chapter Estimates of Mixing, pages 3696–3706.
+Academic Press, 2009.
+URL: <a href="http://www.sciencedirect.com/science/article/B99B0-4V2BCCJ-DC/2/2ca8446f1fd15696e37ef9212de4968e">http://www.sciencedirect.com/science/article/B99B0-4V2BCCJ-DC/2/2ca8446f1fd15696e37ef9212de4968e</a>, <a href="https://doi.org/DOI: 10.1016/B978-012374473-9.00615-9">doi:DOI: 10.1016/B978-012374473-9.00615-9</a>.
+    [&nbsp;<a href="javascript:disp('@incollection{klymaknash09,\n    author = &amp;#34;Klymak, Jody M. and Nash, Jonathan D.&amp;#34;,\n    editor = &amp;#34;Steele, John H. and Turekian, Karl K. and Thorpe, Steve A.&amp;#34;,\n    booktitle = &amp;#34;Encyclopedia of Ocean Sciences&amp;#34;,\n    chapter = &amp;#34;Estimates of Mixing&amp;#34;,\n    doi = &amp;#34;DOI: 10.1016/B978-012374473-9.00615-9&amp;#34;,\n    jmkpubtype = &amp;#34;inbook&amp;#34;,\n    pages = &amp;#34;3696--3706&amp;#34;,\n    pdf = &amp;#34;http://web.uvic.ca/\textasciitilde jklymak/pdfs/MixingReviewsFinal.pdf&amp;#34;,\n    publisher = &amp;#34;Academic Press&amp;#34;,\n    title = &amp;#34;Estimates of Mixing&amp;#34;,\n    url = &amp;#34;http://www.sciencedirect.com/science/article/B99B0-4V2BCCJ-DC/2/2ca8446f1fd15696e37ef9212de4968e&amp;#34;,\n    year = &amp;#34;2009&amp;#34;,\n    bdsk-url-1 = &amp;#34;http://www.sciencedirect.com/science/article/B99B0-4V2BCCJ-DC/2/2ca8446f1fd15696e37ef9212de4968e&amp;#34;,\n    bdsk-url-2 = &amp;#34;http://dx.doi.org/10.1016/B978-012374473-9.00615-9&amp;#34;\n}\n');">Bibtex</a>&nbsp;]
+    [&nbsp;<a href="http://web.uvic.ca/~jklymak/pdfs/MixingReviewsFinal.pdf">PDF</a>&nbsp;]
+    
+    
+    </p>
+
+
+</section>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://scholar.google.ca/citations?user=jiXa6MsAAAAJ&hl=en"><i class="ai ai-google-scholar ai-lg"></i> Google Scholar</a></li>
+    <li class="list-group-item"><a href="http://orcid.org/0000-0003-4612-8600"><i class="ai ai-orcid ai-lg"></i> OrcID</a></li>
+    <li class="list-group-item"><a href="http://github.com/jklymak"><i class="fa fa-github-square fa-lg"></i> Github</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Recent Posts -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+  <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="http://web.uvic.ca/~jklymak/hughespaperjgr.html">Ken Hughes publishes paper on Arctic&nbsp;Mixing</a></li>
+    <li class="list-group-item"><a href="http://web.uvic.ca/~jklymak/reflectionpaper.html">Internal Tide Reflection Paper published <span class="caps">JPO</span></a></li>
+    <li class="list-group-item"><a href="http://web.uvic.ca/~jklymak/manmangrad.html">Manman Wang&nbsp;Graduates</a></li>
+    <li class="list-group-item"><a href="http://web.uvic.ca/~jklymak/newgradstudent.html">Welcome Lina&nbsp;Rotermund</a></li>
+    <li class="list-group-item"><a href="http://web.uvic.ca/~jklymak/2014-09-01-wangandhughes.html">Two new graduate&nbsp;students!</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Recent Posts -->
+
+<!-- Sidebar/Links -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+  <ul class="list-group" id="links">
+    <li class="list-group-item">
+      <a href="http://uvic.ca/" target="_blank">U. of Victoria</a>
+    </li>
+    <li class="list-group-item">
+      <a href="http://seos.uvic.ca/" target="_blank">School of Earth and Ocean Sciences</a>
+    </li>
+    <li class="list-group-item">
+      <a href="http://phys.uvic.ca/" target="_blank">Department of Physics & Astronomy</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Links -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2017 Jody M. Klymak
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="http://web.uvic.ca/~jklymak/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://web.uvic.ca/~jklymak/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://web.uvic.ca/~jklymak/theme/js/respond.min.js"></script>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $("div.collapseheader").click(function () {
+    $header = $(this).children("span").first();
+    $codearea = $(this).children(".input_area");
+    console.log($(this).children());
+    $codearea.slideToggle(500, function () {
+        $header.text(function () {
+            return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+        });
+    });
+});
+});
+</script>
+
+</body>
+</html>

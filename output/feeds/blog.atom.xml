@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>UVic Ocean Physics - blog</title><link href="http://web.uvic.ca/~jklymak/" rel="alternate"></link><link href="http://web.uvic.ca/~jklymak/feeds/blog.atom.xml" rel="self"></link><id>http://web.uvic.ca/~jklymak/</id><updated>2013-01-09T00:00:00-08:00</updated><entry><title>Mixing due to baroclinic waves paper published in JPO</title><link href="http://web.uvic.ca/~jklymak/2013-01-09-mixingbaroclinic.html" rel="alternate"></link><published>2013-01-09T00:00:00-08:00</published><updated>2013-01-09T00:00:00-08:00</updated><author><name>Jody M. Klymak</name></author><id>tag:web.uvic.ca,2013-01-09:/~jklymak/2013-01-09-mixingbaroclinic.html</id><summary type="html">&lt;p&gt;Our paper on dissipation due to breaking lee waves in the presence of an incoming internal tide has now been published in the Journal of Physical Oceanography.  We show that we can predict the turbulence near isolated topography if we know the phase of and amplitude of incoming tidal energy …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Our paper on dissipation due to breaking lee waves in the presence of an incoming internal tide has now been published in the Journal of Physical Oceanography.  We show that we can predict the turbulence near isolated topography if we know the phase of and amplitude of incoming tidal energy, even if that energy has a substantial baroclinic component.  We also show that the energy dissipated can vary by over an order of magnitude depending on tidal phases, which in turn changes the vertical structure of the incoming waves at the&amp;nbsp;ridge.&lt;/p&gt;
+&lt;p&gt;This work was supported by the &lt;span class="caps"&gt;IWISE&lt;/span&gt; &lt;span class="caps"&gt;DRI&lt;/span&gt; of the &lt;span class="caps"&gt;US&lt;/span&gt; Office of Naval&amp;nbsp;Research.&lt;/p&gt;
+&lt;p&gt;![Incoming internal tided energy creating turbulence.  a) and b) are same amplitude tides, with energy in the first and second vertical modes, but different phases when they hit the obstacle.  This phasing greatly complicates the parameterization of turbulence near sharp&amp;nbsp;topography.][Turb]&lt;/p&gt;
+&lt;div class="citation"&gt;
+Klymak, J.M., M. Buijsman, &lt;span class="caps"&gt;S. M.&lt;/span&gt; Legg, and R. Pinkel, 2013: Parameterizing
+  baroclinic internal tide scattering and breaking on supercritical topography:
+  the one- and two-ridge cases, in press &lt;em&gt;J. Phys Ocean.&lt;/em&gt;
+[&lt;a href="{{ site.baseurl }}/PubsPub_bib.html#klymaketal12a#klymaketal12a"&gt;bib&lt;/a&gt;| 
+&lt;a href="http://web.uvic.ca/~jklymak/IWISE/Baroclinic.pdf"&gt;pdf&lt;/a&gt;]
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;[Turb]: {{ site.baseurl }}/images/KlymakEtAl13aFigSm.png &amp;#8220;Turbulence due to incoming&amp;nbsp;tides&amp;#8221;&lt;/p&gt;</content></entry></feed>
