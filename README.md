@@ -5,6 +5,5 @@ Only trick from all the other versions online is a special version of `themes/pe
 
 To run:
 ```bash
-
-test
+source activate pelican 
 ```
