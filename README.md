@@ -10,3 +10,8 @@ cd ~/Dropbox/PelicanSite/
 make bib # to make the bibliography
 make cp_upload # to install on site
 ```
+
+If we need to use the python environment then run
+```bash
+conda env create -f pelican.env
+```
