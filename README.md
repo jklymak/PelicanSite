@@ -15,3 +15,5 @@ If we need to use the python environment then run
 ```bash
 conda env create -f pelican.env
 ```
+
+The other trick was to use `liquid_tags.img` to include figures.  Much better than raw markdown.  
