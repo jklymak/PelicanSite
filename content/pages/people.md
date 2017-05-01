@@ -13,9 +13,12 @@ Johannes is an expert on surface waves and air-sea interactions.  He also teache
 
 ## Students
 
+{% img floatright {filename}/images/LinaRotermund.jpg 100px %}
 ### Lina Rotermund (2016-- MSc)
 
-Lina is working with Bill Williams and myself on flow and tidal mixing in the channels near Cambridge Bay.
+Lina is working with Bill Williams and myself on flow and tidal mixing in the channels near Cambridge Bay. Lina has already gone on one Arctic exploration tour, and was part of the team that discovered the wrckage of Franklins' lost ship the [*HMS Terror*](https://www.theguardian.com/world/2016/sep/12/hms-terror-wreck-found-arctic-nearly-170-years-northwest-passage-attempt).  
+
+
 
 {% img floatright {filename}/images/Hughes.jpg 100px %}
 ### [Ken Hughes](http://kghughes.com) (2014-- PhD)
@@ -46,7 +49,7 @@ Rowan worked on our instrumentation and co-ordinated our seagoing efforts.  He i
 {% img floatright {filename}/images/MWang.jpg 100px %}
 ### Manman Wang (2014-2016 MSc)
 
-Manman is looking at the interleaving of water masses in the Labrador Sea as part of the 
+Manman is looking at the interleaving of water masses in the Labrador Sea as part of the
 [VITALS](http://knossos.eas.ualberta.ca/vitals/) project.  Manman is submitting a paper, and is now working for Ocean Networks Canada.  
 
 [Wang, 2016](https://dspace.library.uvic.ca/handle/1828/7460)
@@ -57,7 +60,7 @@ Manman is looking at the interleaving of water masses in the Labrador Sea as par
 
 
 {% img floatright {filename}/images/Wan.jpg 100px %}
-### [Di Wan](http://web.uvic.ca/~diwan/Home.html) (MSc, with Mike Foreman) 
+### [Di Wan](http://web.uvic.ca/~diwan/Home.html) (MSc, with Mike Foreman)
 
 For her MSc Di looked at the dynamics of Cayuquot sound on Vancouver Island, a
 locale of significant fish farming.  Now she is working as a Research Technician at the Institute of Ocean Sciences and working on a PhD on the dynamics of the flow through the Discovery Islands and Discovery Channel with Mike Foreman and Stan Dosso
@@ -85,7 +88,7 @@ internal wave impacts a continental slope.  She now works for Rockland Scientifi
 ### Ryan Clouston (MSc 2013)
 
 Ryan is looked at the amplification of exchange over sills caused by
-tidal forcing. 
+tidal forcing.
 
 [Clouston, 2013](http://dspace.library.uvic.ca:8080/handle/1828/4693)
 

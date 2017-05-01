@@ -36,7 +36,7 @@ DEFAULT_DATE = 'fs'
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-STATIC_PATHS = ['images','images/thumbnails', 'pdfs', 'pages/images']
+STATIC_PATHS = ['images','images/thumbnails', 'pdfs', 'pages/images','data']
 
 PAGE_EXCLUDES = ['images','pdfs']
 
@@ -55,7 +55,8 @@ SHOW_ARTICLE_AUTHOR = False
 SHOW_ARTICLE_CATEGORY = True
 SHOW_DATE_MODIFIED = True
 
-SITELOGO = 'images/OPGUvicLogo90.jpg'
+SITELOGO = 'images/UvicOpgLogo.jpg'
+SITELOGO_SIZE = '90px'
 
 #BANNER = 'images/PrettyHeaderCrop.jpg'
 #BANNER_ALL_PAGES = True
