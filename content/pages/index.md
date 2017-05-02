@@ -1,11 +1,9 @@
----
-title:  Jody M. Klymak
-Author: Jody M. Klymak
-URL:
+title: Jody M. Klymak
+author: Jody M. Klymak
+url:
 save_as: index.html
----
 
-<table cellspacing="10" style="padding-bottom:20px; font-size: 90%; color:black; text-indent: 0em">
+<table class="table" >
 	<tr>
 		<td >
 			<image src="images/JMKJune2011.jpg" border="2" width="100" />
@@ -35,7 +33,9 @@ save_as: index.html
 </tr>
 </table>
 
-<p style="font-size: 75%; color:black; text-indent: 0em">
+
+
+<p style="font-size: 85%; text-indent: 0em">
 <a href="./data/KlymakJody.vcf"><i class="fa fa-address-card" aria-hidden="true"></i></a> Mail: P.O. Box 3055 STN CSC
 Victoria, BC Canada, V8W 3P6 <br />
 <i class="fa fa-truck" aria-hidden="true"></i> Courier: Bob Wright Building A405 , University of Victoria, 3800 Finnerty Road (Ring Road), Victoria, BC Canada V8P 5C2

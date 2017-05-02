@@ -48,6 +48,7 @@ PLUGINS = ['pelican-bibtex','i18n_subsites','liquid_tags.img', 'liquid_tags.vide
            'liquid_tags.include_code', 'liquid_tags.notebook']
 #BOOTSTRAP_FLUID = True
 BOOTSTRAP_THEME = 'flatly'
+#BOOTSTRAP_THEME = 'min'
 DISPLAY_RECENT_POSTS_ON_SIDEBAR=True
 DISPLAY_CATEGORIES_ON_MENU = False
 
